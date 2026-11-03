@@ -1,0 +1,1374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Braintree Unit Pick</title>
+<meta name="description" content="Three warehouse rooms at ReadySpaces Braintree: photos, tenant reviews, what each room costs, and the deal Wilson asked for.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Which Braintree unit?">
+<meta property="og:description" content="Three warehouse rooms at ReadySpaces Braintree: photos, tenant reviews, what each room costs, and the deal Wilson asked for.">
+<meta property="og:url" content="https://wilsonwu-ai.github.io/braintree-warehouse/">
+<meta property="og:image" content="https://wilsonwu-ai.github.io/braintree-warehouse/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The ReadySpaces building at 530 West St, Braintree">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23212D45'/%3E%3Cpath d='M12 52V27l20-13 20 13v25H39V37H25v15z' fill='%23FFC03D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:wght@600;800&display=swap');
+
+/* ---------- theme tokens: light is the bare :root ---------- */
+:root{
+  color-scheme:light;
+  --font-display:'Fraunces','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --font-body:'Figtree','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;
+  --bg:#F5F1E6;
+  --surface:#FFFDF7;
+  --surface-2:#EEE8D8;
+  --ink:#212D45;
+  --ink-2:#46526B;
+  --ink-3:#5A647A;
+  --line:rgba(33,45,69,.16);
+  --line-strong:rgba(33,45,69,.34);
+  --navy:#212D45;
+  --gold:#FFC03D;
+  --on-gold:#212D45;
+  --gold-text:#7A4F00;
+  --focus:#1D5BBF;
+  --wall:#212D45;
+  --halo:#FFFDF7;
+  --door-faint:rgba(33,45,69,.45);
+  --ctx-fill:rgba(33,45,69,.035);
+  --ctx-line:rgba(33,45,69,.26);
+  --ctx-text:rgba(33,45,69,.55);
+  --c-e2:#1D5BBF; --c-e2-on:#FFFFFF; --c-e2-fill:rgba(29,91,191,.26); --c-e2-soft:rgba(29,91,191,.09);
+  --c-d6:#FFC03D; --c-d6-on:#212D45; --c-d6-line:#B87D00; --c-d6-fill:rgba(255,192,61,.40); --c-d6-soft:rgba(255,192,61,.22);
+  --c-b6:#1F7A70; --c-b6-on:#FFFFFF; --c-b6-fill:rgba(31,122,112,.26); --c-b6-soft:rgba(31,122,112,.10);
+  --hatch-bg:rgba(255,192,61,.24);
+  --hatch-ln:#B87D00;
+  --btn-bg:#212D45;
+  --btn-on:#F5F1E6;
+  --scrim:rgba(19,26,43,.82);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#131A2B;
+    --surface:#1B2440;
+    --surface-2:#222D4D;
+    --ink:#F2EDDD;
+    --ink-2:#C3CADA;
+    --ink-3:#9AA4BA;
+    --line:rgba(242,237,221,.16);
+    --line-strong:rgba(242,237,221,.36);
+    --navy:#212D45;
+    --gold:#FFC03D;
+    --on-gold:#212D45;
+    --gold-text:#FFC03D;
+    --focus:#FFC03D;
+    --wall:#F2EDDD;
+    --halo:#1B2440;
+    --door-faint:rgba(242,237,221,.5);
+    --ctx-fill:rgba(242,237,221,.045);
+    --ctx-line:rgba(242,237,221,.28);
+    --ctx-text:rgba(242,237,221,.58);
+    --c-e2:#6FA3F5; --c-e2-on:#0E1730; --c-e2-fill:rgba(111,163,245,.30); --c-e2-soft:rgba(111,163,245,.14);
+    --c-d6:#FFC03D; --c-d6-on:#212D45; --c-d6-line:#FFC03D; --c-d6-fill:rgba(255,192,61,.32); --c-d6-soft:rgba(255,192,61,.16);
+    --c-b6:#5CC4B6; --c-b6-on:#0E1730; --c-b6-fill:rgba(92,196,182,.30); --c-b6-soft:rgba(92,196,182,.14);
+    --hatch-bg:rgba(255,192,61,.20);
+    --hatch-ln:#FFC03D;
+    --btn-bg:#F2EDDD;
+    --btn-on:#131A2B;
+    --scrim:rgba(5,8,16,.86);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131A2B;
+  --surface:#1B2440;
+  --surface-2:#222D4D;
+  --ink:#F2EDDD;
+  --ink-2:#C3CADA;
+  --ink-3:#9AA4BA;
+  --line:rgba(242,237,221,.16);
+  --line-strong:rgba(242,237,221,.36);
+  --navy:#212D45;
+  --gold:#FFC03D;
+  --on-gold:#212D45;
+  --gold-text:#FFC03D;
+  --focus:#FFC03D;
+  --wall:#F2EDDD;
+  --halo:#1B2440;
+  --door-faint:rgba(242,237,221,.5);
+  --ctx-fill:rgba(242,237,221,.045);
+  --ctx-line:rgba(242,237,221,.28);
+  --ctx-text:rgba(242,237,221,.58);
+  --c-e2:#6FA3F5; --c-e2-on:#0E1730; --c-e2-fill:rgba(111,163,245,.30); --c-e2-soft:rgba(111,163,245,.14);
+  --c-d6:#FFC03D; --c-d6-on:#212D45; --c-d6-line:#FFC03D; --c-d6-fill:rgba(255,192,61,.32); --c-d6-soft:rgba(255,192,61,.16);
+  --c-b6:#5CC4B6; --c-b6-on:#0E1730; --c-b6-fill:rgba(92,196,182,.30); --c-b6-soft:rgba(92,196,182,.14);
+  --hatch-bg:rgba(255,192,61,.20);
+  --hatch-ln:#FFC03D;
+  --btn-bg:#F2EDDD;
+  --btn-on:#131A2B;
+  --scrim:rgba(5,8,16,.86);
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-body);font-size:16px;line-height:1.5;
+  padding-block:22px 56px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
+h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.12;letter-spacing:-.01em}
+b,strong{font-weight:800}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.ic{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- header ---------- */
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-text)}
+.eyebrow::before{content:"";width:28px;height:5px;border-radius:3px;background:var(--gold);flex:none}
+h1{font-size:clamp(2.3rem,8vw,4rem);margin-top:10px}
+.lede{margin-top:12px;max-width:40rem;font-size:clamp(1.02rem,2.4vw,1.2rem);color:var(--ink-2)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 10px;margin:18px 0 0;padding:0;list-style:none}
+.legend li{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;border-radius:99px;font-weight:800;background:var(--surface);border:1.5px solid var(--line-strong)}
+.legend .sw{width:22px;height:22px;border-radius:7px;flex:none}
+.lg-e2 .sw{background:var(--c-e2)}
+.lg-d6 .sw{background:var(--c-d6)}
+.lg-b6 .sw{background:var(--c-b6)}
+.gloss{margin-top:8px;font-size:.85rem;color:var(--ink-3)}
+
+/* ---------- answer box ---------- */
+.answer{margin-top:24px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);background:var(--surface);border:2px solid var(--ink);border-radius:18px;overflow:hidden;box-shadow:6px 6px 0 var(--gold)}
+.ans-main{padding:18px 22px 20px}
+.ans-switch{padding:18px 22px 20px;border-left:2px dashed var(--line-strong);background:var(--surface-2)}
+.chip{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px;background:var(--gold);color:var(--on-gold)}
+.chip.alt{background:var(--ink);color:var(--bg)}
+.ans-line{margin-top:8px;font-weight:700;font-size:1.08rem}
+.ans-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;margin-top:4px}
+.ans-price .now{font-family:var(--font-display);font-weight:800;font-size:clamp(2.3rem,7vw,3.1rem);line-height:1.05}
+.ans-price .per{font-weight:700;color:var(--ink-2);margin-left:-8px}
+.ans-price .was{display:inline-flex;align-items:baseline;gap:6px;color:var(--ink-3);font-size:1.05rem}
+.ans-price .was s{text-decoration-thickness:2px}
+.ans-switch p{margin-top:8px}
+.ans-switch .small{font-size:.95rem;color:var(--ink-2)}
+@media (max-width:720px){
+  .answer{grid-template-columns:minmax(0,1fr)}
+  .ans-switch{border-left:0;border-top:2px dashed var(--line-strong)}
+}
+
+/* ---------- sections ---------- */
+.sec{margin-top:46px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 20px;margin-bottom:14px}
+.sec h2{font-size:clamp(1.5rem,4vw,2rem)}
+.sub{margin-top:6px;color:var(--ink-2);max-width:44rem}
+.replay{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:700;font-size:.95rem;color:var(--btn-on);background:var(--btn-bg);border:0;border-radius:99px;padding:9px 16px 9px 13px;cursor:pointer}
+.replay svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.replay:hover{filter:brightness(1.12)}
+.replay:focus-visible,.plan-scroll:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+/* ---------- floor plan ---------- */
+.plan-card{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:18px;padding:10px 10px 12px}
+.plan-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border-radius:12px}
+.plan{display:block;width:100%;min-width:780px;height:auto;--p4:14 10 14 10 14 10 14 10}
+.hint{display:none;margin-top:8px;font-size:.85rem;color:var(--ink-3)}
+.cap{margin-top:10px;font-size:.88rem;color:var(--ink-2);max-width:60rem}
+@media (max-width:840px){.hint{display:block}}
+
+.plan text{fill:var(--ink);font-family:var(--font-body);font-variant-numeric:tabular-nums}
+.plan .ctx rect{fill:var(--ctx-fill);stroke:var(--ctx-line);stroke-width:2.5}
+.plan .ctx-lbl text{font-size:26px;font-weight:700;fill:var(--ctx-text)}
+.plan .u-shape{stroke-width:6;stroke-linejoin:round}
+.plan .u-e2 .u-shape{fill:var(--c-e2-fill);stroke:var(--c-e2)}
+.plan .u-d6 .u-shape{fill:var(--c-d6-fill);stroke:var(--c-d6-line)}
+.plan .u-b6 .u-shape{fill:var(--c-b6-fill);stroke:var(--c-b6)}
+.plan .wall{fill:none;stroke:var(--wall);stroke-width:7;stroke-linejoin:miter;stroke-linecap:square}
+.plan .door{fill:var(--door-faint);stroke:none}
+.plan .door.door-1{fill:var(--gold);stroke:var(--ink);stroke-width:3}
+.plan .pin{fill:var(--gold);stroke:var(--ink);stroke-width:3;stroke-linejoin:round}
+.plan .dnum{font-size:26px;font-weight:700;fill:var(--ctx-text);text-anchor:middle}
+.plan .dcap{font-size:22px;font-weight:600;fill:var(--ctx-text)}
+.plan .d1-lbl{font-size:30px;font-weight:800;fill:var(--ink);text-anchor:end}
+.plan .badge{fill:var(--surface);stroke:var(--ink);stroke-width:3}
+.plan .halo{paint-order:stroke fill;stroke:var(--halo);stroke-width:8px;stroke-linejoin:round}
+.plan .al{font-size:28px;font-weight:700;fill:var(--ink)}
+.plan .al2{font-size:22px;font-weight:500;fill:var(--ink-2)}
+.plan .keyt{font-size:24px;font-weight:600;fill:var(--ink-2)}
+.plan .route-key{fill:none;stroke:var(--ink);stroke-width:7;stroke-dasharray:14 10}
+.plan .route{fill:none;stroke-width:7;stroke-linejoin:round;stroke-linecap:butt}
+.plan .r-e2{stroke:var(--c-e2);stroke-dasharray:var(--p4) 14 130}
+.plan .r-d6{stroke:var(--c-d6-line);stroke-dasharray:var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) 14 610}
+.plan .r-b6{stroke:var(--c-b6);stroke-dasharray:var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) var(--p4) 14 10 14 10 14 1042}
+.plan .box{stroke:var(--halo);stroke-width:3}
+.plan .box-e2{fill:var(--c-e2);transform:translate(802px,1240px)}
+.plan .box-d6{fill:var(--c-d6);transform:translate(825px,811px)}
+.plan .box-b6{fill:var(--c-b6);transform:translate(897px,469px)}
+.plan .flag-bg{stroke:var(--halo);stroke-width:4;stroke-linejoin:round}
+.plan .flag-tx{font-size:32px;font-weight:800;text-anchor:middle}
+.plan .f-e2 .flag-bg{fill:var(--c-e2)}
+.plan .f-d6 .flag-bg{fill:var(--c-d6)}
+.plan .f-b6 .flag-bg{fill:var(--c-b6)}
+.plan .f-e2 .flag-tx{fill:var(--c-e2-on)}
+.plan .f-d6 .flag-tx{fill:var(--c-d6-on)}
+.plan .f-b6 .flag-tx{fill:var(--c-b6-on)}
+
+/* ---------- unit cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.card{--c:var(--c-e2);--c-on:var(--c-e2-on);--c-soft:var(--c-e2-soft);--c-line:var(--c-e2);display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1.5px solid var(--line-strong);border-top:8px solid var(--c-line);border-radius:16px;padding:16px}
+.c-d6{--c:var(--c-d6);--c-on:var(--c-d6-on);--c-soft:var(--c-d6-soft);--c-line:var(--c-d6-line)}
+.c-b6{--c:var(--c-b6);--c-on:var(--c-b6-on);--c-soft:var(--c-b6-soft);--c-line:var(--c-b6)}
+.card-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.badge-u{font-family:var(--font-display);font-weight:800;font-size:1.9rem;line-height:1;padding:6px 14px 7px;border-radius:12px;background:var(--c);color:var(--c-on)}
+.size{font-weight:700;font-size:1.05rem;color:var(--ink-2)}
+.tag{margin-left:auto;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--ink);border-radius:99px;padding:2px 9px;white-space:nowrap}
+.where{color:var(--ink-2)}
+.lab{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px}
+.price .big{font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1.05}
+.price .big.na{font-size:1.5rem;color:var(--ink-2)}
+.price .per{font-weight:700;color:var(--ink-2)}
+.psf{font-size:.92rem;color:var(--ink-3)}
+.disc{display:grid;gap:6px}
+.disc>div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7px 10px;border-radius:10px;background:var(--c-soft)}
+.disc dt{font-weight:600;font-size:.95rem}
+.disc dd{font-weight:800}
+.disc .na dd{font-weight:600;color:var(--ink-3);font-size:.92rem}
+.ests{display:grid;gap:8px}
+.est{border:1.5px dashed var(--c-line);border-radius:12px;padding:9px 11px;background:var(--c-soft);font-size:.92rem}
+.est-k{font-weight:600;margin-bottom:4px}
+.est-s{font-size:.82rem;color:var(--ink-2);margin:-2px 0 4px}
+.est-v{display:flex;justify-content:space-between;gap:8px}
+.est-tag{display:inline-block;margin-top:7px;font-size:.68rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:2px 8px;border-radius:6px;color:var(--ink);background:repeating-linear-gradient(45deg,var(--hatch-bg) 0 5px,transparent 5px 10px);border:1px solid var(--hatch-ln)}
+.note{display:flex;gap:9px;align-items:flex-start;font-size:.95rem}
+.mk{flex:none;width:22px;height:22px;margin-top:1px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.8rem;line-height:1}
+.mk.ok{background:var(--ink);color:var(--bg)}
+.mk.warn{background:var(--gold);color:var(--on-gold)}
+.mk svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:860px){.cards{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- chart ---------- */
+.chart-card{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:16px;padding:12px 10px 8px;max-width:780px}
+.chart{display:block;width:100%;height:auto}
+.chart text{fill:var(--ink);font-family:var(--font-body);font-variant-numeric:tabular-nums}
+.chart .rl{font-size:20px;font-weight:600}
+.chart .vl{font-size:21px;font-weight:800}
+.chart .scale-t{font-size:18px;font-weight:600;fill:var(--ink-3)}
+.chart .ref-l{font-size:20px;font-weight:800}
+.chart .axis{stroke:var(--line-strong);stroke-width:2;fill:none}
+.chart .ref{stroke:var(--ink);stroke-width:2.5;stroke-dasharray:7 5}
+.chart .bar-e2{fill:var(--c-e2)}
+.chart .bar-b6{fill:var(--c-b6)}
+.chart .quoted{fill-opacity:.4}
+.chart .bar-d6{fill:url(#hatch);stroke:var(--c-d6-line);stroke-width:2.5}
+.chart .hatch-bg{fill:var(--hatch-bg)}
+.chart .hatch-ln{fill:var(--hatch-ln)}
+.take{margin-top:12px;font-size:1.02rem;max-width:52rem}
+.take+.take{margin-top:6px;font-size:.95rem;color:var(--ink-2)}
+
+/* ---------- what the rent includes ---------- */
+.incl{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px}
+.panel{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:16px;padding:16px}
+.panel h3{font-size:1.2rem}
+.est-note{margin-top:4px;font-size:.85rem;color:var(--ink-3)}
+.lines{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
+.lines li{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr) auto;gap:10px;align-items:center}
+.lines .k{font-size:.92rem;line-height:1.25}
+.lines .v{font-weight:700;text-align:right}
+.trk{height:10px;border-radius:6px;background:var(--line);overflow:hidden}
+.trk .fill{display:block;height:100%;border-radius:6px;background:var(--ink-3)}
+.tot{display:flex;justify-content:space-between;gap:12px;margin-top:14px;padding-top:10px;border-top:2px solid var(--ink)}
+.panel .price{margin-top:12px}
+.checks{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px}
+.checks li{display:flex;gap:9px;align-items:center}
+.checks .mk{width:20px;height:20px;margin:0}
+.save{margin-top:12px;font-size:.95rem;color:var(--ink-2)}
+.warnbar{margin-top:14px;display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:2px solid var(--gold);border-radius:14px;background:var(--surface);font-size:.95rem}
+.strip-h{margin-top:30px;font-size:1.2rem}
+.amenities{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.amenities li{display:flex;gap:10px;align-items:flex-start;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:11px 12px}
+.ico-wrap{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--surface-2);border:1.5px solid var(--line-strong)}
+.ico{width:34px;height:34px}
+.am-t{display:flex;flex-direction:column;gap:5px;min-width:0}
+.am-t b{font-size:.95rem;line-height:1.2}
+.srcs{display:flex;flex-wrap:wrap;gap:4px}
+.src{font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line-strong);border-radius:6px;padding:1px 6px}
+.srckey{margin-top:10px;font-size:.85rem;color:var(--ink-3)}
+@media (max-width:900px){.amenities{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.incl{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){
+  .sec{margin-top:38px}
+  .ans-main,.ans-switch{padding:16px 16px 18px}
+  .card{padding:14px}
+}
+@media (max-width:420px){
+  .amenities{grid-template-columns:minmax(0,1fr)}
+  .lines li{grid-template-columns:minmax(0,1fr) auto}
+  .lines .trk{grid-column:1 / -1;order:3}
+}
+
+/* ---------- unknowns + footer ---------- */
+.todo{list-style:none;padding:0;display:grid;gap:10px}
+.todo li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px}
+.qm{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--on-gold);font-weight:800}
+.todo .wrapword{overflow-wrap:anywhere}
+.foot{margin-top:46px;padding-top:16px;border-top:2px solid var(--ink);font-size:.88rem;color:var(--ink-2)}
+.foot p+p{margin-top:6px}
+
+/* ---------- update line + hero photo ---------- */
+.status{display:flex;align-items:flex-start;gap:10px;margin-top:16px;max-width:44rem;font-weight:600}
+.status .chip{flex:none;margin-top:3px;white-space:nowrap}
+.photo-card{margin-top:18px;background:var(--surface);border:1.5px solid var(--line-strong);border-radius:18px;padding:10px 10px 12px}
+.photo-frame{overflow:hidden;isolation:isolate;border-radius:12px;background:var(--surface-2)}
+.photo-frame img{display:block;width:100%;height:auto}
+
+/* ---------- what ReadySpaces is ---------- */
+.eli{max-width:44rem;margin-top:10px;padding-left:16px;border-left:6px solid var(--gold);font-size:clamp(1.05rem,2.6vw,1.2rem)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.step{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1.5px solid var(--line-strong);border-radius:16px;padding:16px}
+.step-top{display:flex;align-items:center;gap:12px}
+.step .ico-wrap{width:60px;height:60px}
+.step .ico{width:44px;height:44px}
+.step-t{font-size:1.25rem}
+.step p{color:var(--ink-2)}
+.facts{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.facts li{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px}
+.facts li.deal{grid-column:1 / -1;border:2px solid var(--gold)}
+.fsrc{margin-top:4px;font-size:.82rem;color:var(--ink-3)}
+@media (max-width:760px){.steps,.facts{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- photo grid + lightbox ---------- */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tile{display:flex;flex-direction:column;gap:9px;background:var(--surface);border:1.5px solid var(--line-strong);border-radius:16px;padding:8px 8px 12px}
+.tile a{display:block;overflow:hidden;isolation:isolate;border-radius:10px;background:var(--surface-2)}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover}
+.tile figcaption{padding:0 4px;font-size:.84rem;line-height:1.35;color:var(--ink-2)}
+.tile figcaption b{color:var(--ink)}
+.tiles-note{margin-top:12px;font-size:.88rem;color:var(--ink-2);max-width:52rem}
+.tile a:focus-visible,.btn:focus-visible,.lb-btn:focus-visible,.foot a:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+@media (max-width:900px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.tiles{gap:10px}.tile{padding:6px 6px 10px}.tile figcaption{font-size:.8rem}}
+.lb{width:min(96vw,980px);max-width:none;max-height:96vh;margin:auto;padding:0;border:0;background:transparent;color:var(--ink);overflow:auto;overscroll-behavior:contain}
+.lb:focus-visible{outline:none}
+.lb::backdrop{background:var(--scrim,rgba(19,26,43,.82))}
+.lb-card{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:18px;padding:10px 10px 12px}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.lb-count{padding-left:6px;font-weight:700;color:var(--ink-2)}
+.lb-img{display:block;width:100%;height:auto;max-height:64vh;object-fit:contain;border-radius:12px;background:var(--surface-2)}
+.lb-cap{margin-top:10px;padding:0 4px;min-height:3em}
+.lb-nav{display:flex;justify-content:space-between;gap:10px;margin-top:10px}
+.lb-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:inherit;font-weight:700;font-size:.95rem;color:var(--btn-on);background:var(--btn-bg);border:0;border-radius:99px;padding:9px 18px;cursor:pointer}
+.lb-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.lb-btn:hover{filter:brightness(1.12)}
+html.lb-open{overflow:hidden}
+@media (max-height:560px){.lb-img{max-height:46vh}}
+
+/* ---------- availability line on the unit cards ---------- */
+.avail{display:flex;gap:9px;align-items:flex-start;font-size:.95rem}
+.avail-ic{flex:none;width:22px;height:22px}
+.avail .mk{margin-top:0}
+.avail-src{color:var(--ink-3)}
+
+/* ---------- tenant reviews ---------- */
+.rate{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:16px;align-items:stretch}
+.rate-main{display:flex;align-items:center;flex-wrap:wrap;gap:8px 20px}
+.rate-big{font-family:var(--font-display);font-weight:800;font-size:clamp(3.4rem,12vw,4.6rem);line-height:1}
+.stars{position:relative;display:block;width:190px;max-width:100%}
+.stars svg{display:block;width:100%;height:auto}
+.stars .s-on{position:absolute;left:0;top:0;height:100%;clip-path:inset(0 4% 0 0)}
+.star-off{fill:var(--surface-2);stroke:var(--line-strong);stroke-width:1.2;stroke-linejoin:round}
+.star-on{fill:var(--gold);stroke:var(--c-d6-line);stroke-width:1.2;stroke-linejoin:round}
+.rate-t{margin-top:8px;font-weight:700}
+.rate-s{font-size:.88rem;color:var(--ink-3)}
+.dist{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:9px}
+.dist li{display:grid;grid-template-columns:4.2rem minmax(0,1fr) 2rem;gap:10px;align-items:center}
+.dk{font-size:.92rem;font-weight:600}
+.dtrk{height:12px;border-radius:7px;background:var(--line);overflow:hidden}
+.dfill{display:block;height:100%;border-radius:7px;background:var(--gold);box-shadow:inset 0 0 0 1.5px var(--c-d6-line);transform-origin:0 50%}
+.dv{font-weight:800;text-align:right}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:12px}
+.qcard{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1.5px solid var(--line-strong);border-radius:16px;padding:14px 16px}
+.qcard.wide{grid-column:span 2}
+.qs{display:block;width:96px;height:auto}
+.qs .star-on{stroke-width:1.8}
+.qcard blockquote,.qcard .qsum{margin:0;font-size:.98rem;line-height:1.45;overflow-wrap:anywhere}
+.qcard figcaption{margin-top:auto;font-size:.84rem;color:var(--ink-2)}
+.qcard figcaption b{color:var(--ink)}
+.lows{margin-top:18px}
+.lows ul{margin:8px 0 0;padding-left:1.2rem;display:grid;gap:4px}
+.bigger{margin-top:14px;background:transparent;border-style:dashed;font-size:.9rem;color:var(--ink-2)}
+.bigger h3{font-size:1.05rem;color:var(--ink)}
+.bigger p{margin-top:8px}
+@media (max-width:900px){.quotes{grid-template-columns:repeat(2,minmax(0,1fr))}.qcard.wide{grid-column:auto}.qcard:last-child{grid-column:1 / -1}}
+@media (max-width:760px){.rate{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:620px){.quotes{grid-template-columns:minmax(0,1fr)}.qcard:last-child{grid-column:auto}}
+
+/* ---------- location ---------- */
+.geo-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:start}
+.map-card{background:var(--surface);border:1.5px solid var(--line-strong);border-radius:18px;padding:10px}
+.map-card iframe{display:block;width:100%;height:320px;border:0;border-radius:12px;background:var(--surface-2)}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:12px;font:inherit;font-weight:700;font-size:.95rem;color:var(--btn-on);background:var(--btn-bg);border-radius:99px;padding:9px 18px 9px 14px;text-decoration:none}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:4.4;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover{filter:brightness(1.12)}
+.geo{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.geo li{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:11px 14px}
+@media (max-width:820px){.geo-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- footer links ---------- */
+.foot{overflow-wrap:anywhere}
+.foot a{color:var(--ink);text-underline-offset:2px}
+
+/* ---------- motion (only when the visitor has no reduced-motion preference) ---------- */
+@media (prefers-reduced-motion:no-preference){
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes light{from{opacity:.1}to{opacity:1}}
+  @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes dash-e2{from{stroke-dashoffset:120}to{stroke-dashoffset:0}}
+  @keyframes dash-d6{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+  @keyframes dash-b6{from{stroke-dashoffset:1032}to{stroke-dashoffset:0}}
+  @keyframes go-e2{0%{transform:translate(738px,1296px)}46.667%{transform:translate(738px,1240px)}100%{transform:translate(802px,1240px)}}
+  @keyframes go-d6{0%{transform:translate(710px,1296px)}80.833%{transform:translate(710px,811px)}100%{transform:translate(825px,811px)}}
+  @keyframes go-b6{0%{transform:translate(692px,1296px)}74.516%{transform:translate(692px,527px)}94.38%{transform:translate(897px,527px)}100%{transform:translate(897px,469px)}}
+
+  .play .wall{stroke-dasharray:100;stroke-dashoffset:100;animation:draw 1.7s cubic-bezier(.65,.05,.3,1) .1s both}
+  .play .ctx,.play .key{animation:fade 1.1s ease-out .6s both}
+  .play .doors{animation:fade .8s ease-out 1s both}
+  .play .u-e2{animation:light .8s ease-out 1.6s both}
+  .play .u-d6{animation:light .8s ease-out 2s both}
+  .play .u-b6{animation:light .8s ease-out 2.4s both}
+  .play .f-e2{animation:pop .55s cubic-bezier(.2,.9,.3,1.15) 1.75s both}
+  .play .f-d6{animation:pop .55s cubic-bezier(.2,.9,.3,1.15) 2.15s both}
+  .play .f-b6{animation:pop .55s cubic-bezier(.2,.9,.3,1.15) 2.55s both}
+  .play .amen{animation:fade .6s ease-out both;animation-delay:calc(2.2s + var(--i,0) * .12s)}
+  .play .r-e2{animation:dash-e2 .4s linear 3.4s both}
+  .play .r-d6{animation:dash-d6 2s linear 3.4s both}
+  .play .r-b6{animation:dash-b6 3.44s linear 3.4s both}
+  .play .box-e2{animation:go-e2 .4s linear 3.4s both,fade .12s linear 3.4s both}
+  .play .box-d6{animation:go-d6 2s linear 3.4s both,fade .12s linear 3.4s both}
+  .play .box-b6{animation:go-b6 3.44s linear 3.4s both,fade .12s linear 3.4s both}
+
+  .play .bar{transform-box:fill-box;transform-origin:0 50%;animation:grow .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(.15s + var(--i,0) * .14s)}
+  .play .vl{animation:fade .4s ease-out both;animation-delay:calc(.8s + var(--i,0) * .14s)}
+  .play .ref,.play .ref-l{animation:fade .5s ease-out 1s both}
+
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+  @keyframes starwipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 4% 0 0)}}
+
+  /* hero photo: a slow, gentle settle on load (the photo is never hidden) */
+  .photo-frame img{transform-origin:50% 62%;animation:settle 2.8s cubic-bezier(.2,.7,.2,1) both}
+
+  /* scroll reveals: the script adds rv-wait only to blocks that start below the fold,
+     then swaps it for rv-in when the block scrolls into view. Without the script nothing is hidden. */
+  .rv-wait{opacity:0}
+  .rv-in{animation:rise .65s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d,0) * var(--gap,90ms))}
+  .step.rv-in{--gap:170ms;animation-name:pop;animation-duration:.6s;animation-timing-function:cubic-bezier(.2,.9,.3,1.15)}
+  .tile.rv-in{--gap:70ms}
+  .rv-wait .s-on{clip-path:inset(0 100% 0 0)}
+  .rv-in .s-on{animation:starwipe 1.1s cubic-bezier(.3,.7,.2,1) .3s both}
+  .rv-wait .dfill{transform:scaleX(0)}
+  .rv-in .dfill{animation:grow .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(.25s + var(--i,0) * .12s)}
+
+  /* lightbox */
+  .lb[open]{animation:pop .3s cubic-bezier(.2,.8,.2,1) both}
+  .lb[open]::backdrop{animation:fade .3s ease-out both}
+  .lb-img.swap{animation:fade .3s ease-out both}
+  @media (hover:hover){
+    .tile img{transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+    .tile a:hover img{transform:scale(1.04)}
+  }
+}
+@media print{
+  .rv-wait{opacity:1}
+  .rv-wait .s-on{clip-path:inset(0 4% 0 0)}
+  .rv-wait .dfill{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .replay{display:none}
+}
+</style>
+</head>
+<body>
+<!-- shared icon glyphs: drawn in SVG, no emoji -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <g id="g-cup">
+      <path d="M-12 -4 h20 v8 a9 9 0 0 1 -9 9 h-2 a9 9 0 0 1 -9 -9 z"/>
+      <path d="M8 -1 h4 a4 4 0 0 1 0 8 h-4"/>
+      <path d="M-6 -8 q3 -3 0 -6 M1 -8 q3 -3 0 -6"/>
+    </g>
+    <g id="g-wc">
+      <circle cx="-8" cy="-11" r="3.6"/>
+      <path d="M-8 -6 v10 M-8 4 l-3 10 M-8 4 l3 10 M-13 -3 h10"/>
+      <circle cx="9" cy="-11" r="3.6"/>
+      <path d="M9 -6 l-6 11 h12 z M6 5 v9 M12 5 v9"/>
+    </g>
+    <g id="g-door">
+      <path d="M-9 14 V-13 H9 V14"/>
+      <path d="M-14 14 H14"/>
+      <circle cx="4.5" cy="1" r="1.5"/>
+    </g>
+    <g id="g-conf">
+      <ellipse cx="0" cy="0" rx="11" ry="6.5"/>
+      <circle cx="-14" cy="-7" r="2.4"/>
+      <circle cx="14" cy="-7" r="2.4"/>
+      <circle cx="-14" cy="7" r="2.4"/>
+      <circle cx="14" cy="7" r="2.4"/>
+      <circle cx="0" cy="-12.5" r="2.4"/>
+      <circle cx="0" cy="12.5" r="2.4"/>
+    </g>
+    <g id="g-mail">
+      <rect x="-14" y="-9" width="28" height="18" rx="2.5"/>
+      <path d="M-14 -7 L0 4 L14 -7"/>
+    </g>
+    <g id="g-wifi">
+      <path d="M-15 -2 a21 21 0 0 1 30 0"/>
+      <path d="M-10 4 a14 14 0 0 1 20 0"/>
+      <path d="M-5 10 a7 7 0 0 1 10 0"/>
+      <circle cx="0" cy="14" r="1.6"/>
+    </g>
+    <g id="g-clock">
+      <circle cx="0" cy="0" r="14"/>
+      <path d="M0 -8 V0 L6 4"/>
+    </g>
+    <g id="g-dock">
+      <path d="M-14 14 V-12 H14 V14"/>
+      <path d="M-14 -5 H14 M-14 2 H14 M-14 9 H14"/>
+    </g>
+    <g id="g-fork">
+      <path d="M-9 -15 V12"/>
+      <path d="M-9 10 H-17"/>
+      <path d="M-9 0 H10 V10 H-9"/>
+      <path d="M3 0 V-9 H10 V0"/>
+      <circle cx="-3" cy="12.5" r="3"/>
+      <circle cx="7" cy="12.5" r="3"/>
+    </g>
+    <path id="g-star" d="M0 -12.5 L3.06 -4.21 L11.89 -3.86 L4.95 1.61 L7.35 10.11 L0 5.2 L-7.35 10.11 L-4.95 1.61 L-11.89 -3.86 L-3.06 -4.21 Z"/>
+    <g id="g-stars5">
+      <use href="#g-star" x="15" y="15.2"/>
+      <use href="#g-star" x="45" y="15.2"/>
+      <use href="#g-star" x="75" y="15.2"/>
+      <use href="#g-star" x="105" y="15.2"/>
+      <use href="#g-star" x="135" y="15.2"/>
+    </g>
+    <g id="g-cal">
+      <rect x="-13" y="-10" width="26" height="24" rx="3"/>
+      <path d="M-13 -3 H13 M-6 -14 V-7 M6 -14 V-7"/>
+      <path d="M-6 4 H-5 M0 4 H1 M6 4 H7 M-6 9 H-5 M0 9 H1"/>
+    </g>
+    <g id="g-bill">
+      <path d="M-10 -14 H10 V14 L6.67 11 L3.33 14 L0 11 L-3.33 14 L-6.67 11 L-10 14 Z"/>
+      <path d="M-5 -6 H5 M-5 0 H5 M-5 6 H0"/>
+    </g>
+    <g id="g-pin">
+      <path d="M0 14 C-8 5 -11 0 -11 -5 a11 11 0 0 1 22 0 C11 0 8 5 0 14 Z"/>
+      <circle cx="0" cy="-5" r="4"/>
+    </g>
+  </defs>
+</svg>
+
+<main class="wrap">
+
+  <!-- 1. title block -->
+  <div class="hero">
+    <p class="eyebrow">ReadySpaces Braintree &middot; 530 West St</p>
+    <h1>Which Braintree unit?</h1>
+    <p class="lede">We want to rent a room inside a shared warehouse: we are looking at three rooms (two have prices on the quote), and here is what they cost and what we are asking for.</p>
+    <p class="status"><span class="chip">Update, Nov 2</span><span>Wilson sent this offer to Brett, the building's general manager. Waiting on his reply.</span></p>
+    <ul class="legend" aria-label="The three rooms">
+      <li class="lg-e2"><span class="sw"></span>E2 &middot; 550 sf</li>
+      <li class="lg-d6"><span class="sw"></span>D6 &middot; 650 sf</li>
+      <li class="lg-b6"><span class="sw"></span>B6 &middot; 400 sf</li>
+    </ul>
+    <p class="gloss">sf means square feet.</p>
+    <figure class="photo-card">
+      <div class="photo-frame"><img src="img/exterior.jpg" width="1456" height="831" loading="eager" fetchpriority="high" alt="The ReadySpaces building at 530 West St, Braintree, seen from the parking lot: a long gray metal-sided warehouse with brick ends and the teal ReadySpaces sign above the front doors."></div>
+      <figcaption class="cap">The building: 530 West St, Braintree. Photo: ReadySpaces.</figcaption>
+    </figure>
+  </div>
+
+  <!-- 2. the answer -->
+  <section class="answer" aria-label="Our ask and our switch rule">
+    <div class="ans-main">
+      <span class="chip">Our ask</span>
+      <p class="ans-line">24 months in exchange for 10% off E2</p>
+      <p class="ans-price">
+        <span class="now num">$1,517.67</span><span class="per">/mo</span>
+        <span class="was"><span>from</span> <s class="num">$1,686.30</s></span>
+      </p>
+    </div>
+    <div class="ans-switch">
+      <span class="chip alt">Switch rule (Wilson's)</span>
+      <p><b>Take D6 (650 sf) instead if ReadySpaces gives 20% off it.</b></p>
+      <p class="small">D6 at 20% off costs no more than the E2 deal as long as D6's list price (the price on the quote) is at or below <b class="num">$1,897.09</b>/mo. D6's price is not on the quote yet.</p>
+      <p class="note small"><span class="mk warn" aria-hidden="true">!</span><span>D6 is not listed as available on ReadySpaces' website right now (checked Nov 2).</span></p>
+    </div>
+  </section>
+
+  <!-- 2b. what ReadySpaces is -->
+  <section class="sec" aria-labelledby="what-h">
+    <div class="sec-head"><div>
+      <h2 id="what-h">What ReadySpaces is</h2>
+      <p class="eli">Think of a big warehouse split into private rooms, each with its own locking door. Every business rents a room and shares the rest: loading docks, forklifts, WiFi, a kitchen and meeting rooms. ReadySpaces says one monthly price covers it all (a deposit and our own insurance are on top).</p>
+    </div></div>
+
+    <ol class="steps" role="list">
+      <li class="step" data-rv>
+        <div class="step-top"><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-door" class="ic"/></svg></span><span class="chip">Step 1</span></div>
+        <h3 class="step-t">Rent a private room</h3>
+        <p>ReadySpaces says its rooms run 200 to 5,000 sf.</p>
+      </li>
+      <li class="step" data-rv>
+        <div class="step-top"><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-fork" class="ic"/></svg></span><span class="chip">Step 2</span></div>
+        <h3 class="step-t">Share the big stuff</h3>
+        <p>Loading docks (doors at truck-bed height), forklifts, WiFi, a kitchen and conference rooms.</p>
+      </li>
+      <li class="step" data-rv>
+        <div class="step-top"><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-bill" class="ic"/></svg></span><span class="chip">Step 3</span></div>
+        <h3 class="step-t">Pay one monthly price</h3>
+        <p>The quote bundles shared building costs, power, internet, cleaning and trash.</p>
+      </li>
+    </ol>
+
+    <h3 class="strip-h">A few facts about the company</h3>
+    <ul class="facts" role="list">
+      <li>
+        <p><b>About 38 locations</b> in the US and Canada. Head office in Los Angeles.</p>
+        <p class="fsrc">Source: Saltbox blog (a competitor), Jan 2026. Fulfill.com lists 38+ facilities in 20 metro areas. Head office: TechCrunch, BBB.</p>
+      </li>
+      <li>
+        <p><b>Raised $20 million</b> in Nov 2022.</p>
+        <p class="fsrc">Source: TechCrunch, which calls it an all-debt round (borrowed money, not shares sold).</p>
+      </li>
+      <li>
+        <p>ReadySpaces says <b>more than 200 Boston-area businesses</b> use it.</p>
+        <p class="fsrc">Source: ReadySpaces' Boston page (their own claim).</p>
+      </li>
+      <li>
+        <p><b>Locked and watched.</b> 24/7 cameras, building access control (a way to limit who gets in), and your room is secured separately. Tenant insurance (a policy you buy yourself) is required.</p>
+        <p class="fsrc">Source: ReadySpaces' Braintree page.</p>
+      </li>
+      <li class="deal">
+        <p><b>ReadySpaces' usual starting term is about 3 months,</b> then month to month (renewing each month, with no long contract). Our 24 months is much longer, so we are asking for 10% off in return.</p>
+        <p class="fsrc">Source: third-party sites (Fulfill.com, Saltbox, Warespace).</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 2c. photos -->
+  <section class="sec" aria-labelledby="see-h">
+    <div class="sec-head"><div>
+      <h2 id="see-h">See the place</h2>
+      <p class="sub">Tap a photo to see it bigger.</p>
+    </div></div>
+    <div class="tiles">
+      <figure class="tile" data-rv>
+        <a href="img/loading-docks.jpg" aria-haspopup="dialog"><img src="img/loading-docks.jpg" width="808" height="538" loading="lazy" decoding="async" alt="Three roll-up loading dock doors in a gray metal and red brick wall, with a steel side door and concrete steps beside them."></a>
+        <figcaption><b>Loading docks.</b> Trucks back up to these doors to drop off or pick up pallets.</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/unit-hallway.jpg" aria-haspopup="dialog"><img src="img/unit-hallway.jpg" width="808" height="538" loading="lazy" decoding="async" alt="Inside the warehouse, looking down a wide aisle with a red floor stripe and yellow edge lines. A corrugated metal unit door marked B5 stands open in the foreground."></a>
+        <figcaption><b>The main aisle inside.</b> Each metal door is one business's private room.</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/empty-unit.jpg" aria-haspopup="dialog"><img src="img/empty-unit.jpg" width="808" height="538" loading="lazy" decoding="async" alt="An empty room before move-in: corrugated metal walls on green steel frames that stop well below the roof, a bare concrete floor and an open door at the back marked D3."></a>
+        <figcaption><b>An empty room before move-in:</b> metal walls on steel frames, open above to the roof, concrete floor.</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/unit-b6.jpg" aria-haspopup="dialog"><img src="img/unit-b6.jpg" width="761" height="571" loading="lazy" decoding="async" alt="Looking into B6 from above: a bare room with a concrete floor and corrugated metal walls on green steel frames."></a>
+        <figcaption><b>Inside B6,</b> one of our three options (photo from ReadySpaces' B6 listing).</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/break-room.jpg" aria-haspopup="dialog"><img src="img/break-room.jpg" width="942" height="627" loading="lazy" decoding="async" alt="The break room: two vending machines for cold drinks and snacks, a plant, and round white tables with gray chairs."></a>
+        <figcaption><b>Break room.</b> A tenant review says the kitchen has coffee and a fridge.</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/conference-room.jpg" aria-haspopup="dialog"><img src="img/conference-room.jpg" width="942" height="627" loading="lazy" decoding="async" alt="The conference room: a long gray table with blue office chairs, a wall-mounted TV, a whiteboard and two potted plants."></a>
+        <figcaption><b>Conference room,</b> for meetings with customers.</figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/lounge.jpg" aria-haspopup="dialog"><img src="img/lounge.jpg" width="942" height="627" loading="lazy" decoding="async" alt="The lounge: two gray sofas facing each other across a low wooden coffee table, with a floor lamp and plants."></a>
+        <figcaption><b>Lounge.</b></figcaption>
+      </figure>
+      <figure class="tile" data-rv>
+        <a href="img/lobby.jpg" aria-haspopup="dialog"><img src="img/lobby.jpg" width="942" height="627" loading="lazy" decoding="async" alt="The lobby: two orange armchairs on a patterned rug beside a plant, with the glass entry door on the right."></a>
+        <figcaption><b>Lobby,</b> by the front door.</figcaption>
+      </figure>
+    </div>
+    <p class="tiles-note">Photos from ReadySpaces' Braintree page. Their E2 listing only shows a generic placeholder picture, so there is no photo of E2 itself yet.</p>
+  </section>
+
+  <!-- 3. floor plan -->
+  <section class="sec" aria-labelledby="plan-h">
+    <div class="sec-head">
+      <div>
+        <h2 id="plan-h">Where the three rooms sit</h2>
+        <p class="sub">E2 is right at the garage door. D6 and B6 are deeper inside, so every box travels further.</p>
+      </div>
+      <button type="button" class="replay" id="replay" aria-label="Replay the floor plan animation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg>
+        Replay
+      </button>
+    </div>
+
+    <div class="plan-card" id="plan-card">
+      <div class="plan-scroll" id="plan-scroll" tabindex="0" role="region" aria-label="Floor plan. Scrolls sideways on small screens.">
+        <svg id="plan" class="plan play" viewBox="40 40 1840 1360" role="img" aria-label="Floor plan of the ReadySpaces Braintree building. E2 sits on the front wall right beside drive-in door 1. D6 is in the middle of the building and B6 is inside toward the top middle, so a box has to travel further to reach them. Shared spaces shown: break room and kitchen, restrooms, conference room, mail room, lobby and forklift area.">
+
+          <!-- other units, faint -->
+          <g class="ctx">
+            <!-- west wing -->
+            <rect x="417" y="445" width="111" height="185"/>
+            <rect x="140" y="445" width="238" height="125"/>
+            <rect x="78" y="570" width="162" height="285"/>
+            <rect x="240" y="590" width="140" height="265"/>
+            <rect x="380" y="630" width="148" height="225"/>
+            <rect x="188" y="342" width="84" height="63"/>
+            <rect x="274" y="342" width="84" height="63"/>
+            <!-- left column of units -->
+            <rect x="528" y="108" width="137" height="177"/>
+            <rect x="528" y="287" width="88" height="121"/>
+            <rect x="617" y="287" width="63" height="121"/>
+            <rect x="530" y="450" width="76" height="78"/>
+            <rect x="606" y="450" width="76" height="78"/>
+            <rect x="530" y="528" width="152" height="122"/>
+            <rect x="530" y="650" width="152" height="88"/>
+            <rect x="530" y="738" width="76" height="157"/>
+            <rect x="606" y="738" width="76" height="157"/>
+            <rect x="530" y="895" width="152" height="185"/>
+            <rect x="530" y="1080" width="152" height="68"/>
+            <rect x="530" y="1148" width="150" height="152"/>
+            <rect x="830" y="1148" width="150" height="152"/>
+            <!-- top B rows -->
+            <rect x="722" y="110" width="233" height="102"/>
+            <rect x="722" y="212" width="233" height="103"/>
+            <rect x="722" y="315" width="233" height="105"/>
+            <rect x="722" y="420" width="116" height="85"/>
+            <rect x="955" y="110" width="185" height="395"/>
+            <rect x="1140" y="110" width="137" height="395"/>
+            <rect x="1277" y="262" width="206" height="243"/>
+            <rect x="1277" y="110" width="160" height="152"/>
+            <rect x="1437" y="108" width="85" height="107"/>
+            <rect x="1522" y="110" width="100" height="150"/>
+            <rect x="1522" y="260" width="100" height="87"/>
+            <rect x="1622" y="110" width="116" height="237"/>
+            <rect x="1522" y="347" width="173" height="161"/>
+            <!-- D and C blocks -->
+            <rect x="722" y="548" width="191" height="148"/>
+            <rect x="913" y="548" width="92" height="148"/>
+            <rect x="722" y="696" width="191" height="74"/>
+            <rect x="913" y="696" width="92" height="74"/>
+            <rect x="913" y="770" width="92" height="82"/>
+            <rect x="722" y="852" width="258" height="123"/>
+            <rect x="722" y="975" width="148" height="135"/>
+            <rect x="870" y="975" width="110" height="135"/>
+            <rect x="1043" y="548" width="117" height="42"/>
+            <rect x="1043" y="590" width="117" height="38"/>
+            <rect x="1043" y="628" width="117" height="152"/>
+            <rect x="1043" y="780" width="117" height="72"/>
+            <rect x="1160" y="548" width="125" height="164"/>
+            <rect x="1160" y="712" width="125" height="68"/>
+            <rect x="1160" y="780" width="125" height="72"/>
+            <!-- A block and forklift zone -->
+            <rect x="1327" y="550" width="168" height="100"/>
+            <rect x="1327" y="650" width="168" height="100"/>
+            <rect x="1495" y="550" width="243" height="200"/>
+            <rect x="1327" y="750" width="411" height="158"/>
+            <rect x="1327" y="908" width="103" height="60"/>
+            <rect x="1327" y="968" width="103" height="60"/>
+            <rect x="1327" y="1028" width="103" height="122"/>
+            <rect x="1430" y="908" width="308" height="242"/>
+            <rect x="1435" y="1150" width="303" height="150"/>
+            <rect x="1285" y="1190" width="150" height="110"/>
+            <rect x="1435" y="1235" width="95" height="65"/>
+            <!-- central office and amenity core -->
+            <rect x="980" y="852" width="305" height="448"/>
+            <rect x="983" y="895" width="40" height="80"/>
+            <rect x="1040" y="855" width="93" height="90"/>
+            <rect x="1133" y="855" width="74" height="72"/>
+            <rect x="1207" y="855" width="76" height="72"/>
+            <rect x="1060" y="960" width="73" height="66"/>
+            <rect x="1133" y="927" width="70" height="100"/>
+            <rect x="1207" y="927" width="76" height="80"/>
+            <rect x="1230" y="1007" width="53" height="65"/>
+            <rect x="985" y="1000" width="55" height="62"/>
+            <rect x="983" y="1095" width="55" height="62"/>
+            <rect x="983" y="1160" width="55" height="70"/>
+            <rect x="983" y="1230" width="100" height="70"/>
+            <rect x="1083" y="1230" width="97" height="70"/>
+            <rect x="1180" y="1230" width="50" height="70"/>
+            <rect x="1230" y="1230" width="53" height="70"/>
+            <rect x="1230" y="1148" width="53" height="82"/>
+            <rect x="1065" y="1068" width="68" height="52"/>
+            <rect x="1065" y="1120" width="68" height="50"/>
+            <rect x="1133" y="1068" width="70" height="102"/>
+            <rect x="1230" y="1085" width="53" height="42"/>
+          </g>
+
+          <!-- faint neighbour names so D6 and B6 are easy to place -->
+          <g class="ctx ctx-lbl">
+            <text x="817" y="743" text-anchor="middle">D5</text>
+            <text x="770" y="905" text-anchor="middle">D7</text>
+            <text x="780" y="472" text-anchor="middle">B7</text>
+          </g>
+
+          <!-- the three highlighted rooms -->
+          <g class="unit u-e2"><path class="u-shape" d="M730 1148 H830 V1300 H766 V1252 L730 1226 Z"/></g>
+          <g class="unit u-d6"><rect class="u-shape" x="722" y="770" width="191" height="82"/></g>
+          <g class="unit u-b6"><rect class="u-shape" x="838" y="420" width="117" height="85"/></g>
+
+          <!-- building outline: draws itself -->
+          <path class="wall" pathLength="100" d="M528 107 H1440 V55 H1510 V107 H1738 V1300 H528 V855 H78 V410 H528 Z"/>
+
+          <!-- doors -->
+          <g class="doors">
+            <rect class="door door-1" x="684" y="1291" width="58" height="18" rx="3"/>
+            <rect class="door" x="1325" y="1291" width="54" height="18" rx="3"/>
+            <rect class="door" x="1730" y="456" width="16" height="44" rx="3"/>
+            <rect class="door" x="1730" y="506" width="16" height="44" rx="3"/>
+            <rect class="door" x="1730" y="564" width="16" height="44" rx="3"/>
+            <rect class="door" x="1730" y="1171" width="16" height="44" rx="3"/>
+            <rect class="door" x="1730" y="1241" width="16" height="44" rx="3"/>
+            <rect class="door" x="70" y="490" width="16" height="80" rx="3"/>
+            <text class="dnum" x="1788" y="487">7</text>
+            <text class="dnum" x="1788" y="537">6</text>
+            <text class="dnum" x="1788" y="595">5</text>
+            <text class="dnum" x="1788" y="1202">4</text>
+            <text class="dnum" x="1788" y="1272">3</text>
+            <text class="dnum" x="54" y="539">9</text>
+            <text class="dnum" x="1352" y="1346">Door 2</text>
+            <text class="dcap" x="1752" y="438">Dock doors</text>
+            <text class="dcap" x="1752" y="1148">Dock doors</text>
+          </g>
+
+          <!-- Door 1 marker and label -->
+          <g class="doors">
+            <path class="pin" d="M713 1318 L699 1344 H727 Z"/>
+            <text class="d1-lbl" x="754" y="1372">Drive-in door 1</text>
+          </g>
+
+          <!-- small key in the empty corner -->
+          <g class="key" transform="translate(70 1150)">
+            <path class="route-key" d="M0 0 H70"/>
+            <text class="keyt" x="88" y="9">Box path from the door</text>
+            <g transform="translate(35 58)"><circle class="badge" r="20"/><use href="#g-cup" class="ic" transform="scale(.85)"/></g>
+            <text class="keyt" x="88" y="67">Shared spaces</text>
+          </g>
+
+          <!-- shared amenities -->
+          <g transform="translate(1086 900)"><g class="amen" style="--i:0">
+            <circle class="badge" r="30"/><use href="#g-cup" class="ic" transform="scale(1.3)"/>
+            <text class="al halo" x="44" y="2">Break room<tspan class="al2" x="44" dy="25">and kitchen</tspan></text>
+          </g></g>
+          <g transform="translate(1002 940)"><g class="amen" style="--i:1">
+            <circle class="badge" r="30"/><use href="#g-wc" class="ic" transform="scale(1.3)"/>
+            <text class="al halo" x="-42" y="10" text-anchor="end">Restrooms</text>
+          </g></g>
+          <g transform="translate(597 200)"><g class="amen" style="--i:2">
+            <circle class="badge" r="30"/><use href="#g-wc" class="ic" transform="scale(1.3)"/>
+            <text class="al halo" x="44" y="10">Restrooms</text>
+          </g></g>
+          <g transform="translate(1168 1110)"><g class="amen" style="--i:3">
+            <circle class="badge" r="30"/><use href="#g-conf" class="ic" transform="scale(1.3)"/>
+            <text class="al halo" x="0" y="64" text-anchor="middle">Conference</text>
+          </g></g>
+          <g transform="translate(1257 1106)"><g class="amen" style="--i:4">
+            <circle class="badge" r="26"/><use href="#g-mail" class="ic" transform="scale(1.1)"/>
+            <text class="al halo" x="38" y="10">Mail</text>
+          </g></g>
+          <g transform="translate(1131 1266)"><g class="amen" style="--i:5">
+            <circle class="badge" r="28"/><use href="#g-door" class="ic" transform="scale(1.2)"/>
+            <text class="al halo" x="0" y="86" text-anchor="middle">Lobby</text>
+          </g></g>
+          <g transform="translate(1690 1215)"><g class="amen" style="--i:6">
+            <circle class="badge" r="28"/><use href="#g-fork" class="ic" transform="scale(1.2)"/>
+            <text class="al halo" x="-42" y="10" text-anchor="end">Forklift area</text>
+          </g></g>
+
+          <!-- loading paths from drive-in door 1 (drawn for the picture, not measured) -->
+          <path class="route r-b6" d="M692 1296 V527 H897 V469"/>
+          <path class="route r-d6" d="M710 1296 V811 H825"/>
+          <path class="route r-e2" d="M738 1296 V1240 H802"/>
+          <rect class="box box-b6" x="-8" y="-8" width="16" height="16" rx="3"/>
+          <rect class="box box-d6" x="-8" y="-8" width="16" height="16" rx="3"/>
+          <rect class="box box-e2" x="-8" y="-8" width="16" height="16" rx="3"/>
+
+          <!-- room labels -->
+          <g class="flag f-e2">
+            <path class="flag-bg" d="M788 1328 L800 1308 L812 1328 H998 a12 12 0 0 1 12 12 V1368 a12 12 0 0 1 -12 12 H788 a12 12 0 0 1 -12 -12 V1340 a12 12 0 0 1 12 -12 Z"/>
+            <text class="flag-tx" x="893" y="1365">E2 &middot; 550 sf</text>
+          </g>
+          <g class="flag f-d6">
+            <path class="flag-bg" d="M941 785 H1151 a12 12 0 0 1 12 12 V825 a12 12 0 0 1 -12 12 H941 a12 12 0 0 1 -12 -12 V822 L915 811 L929 800 V797 a12 12 0 0 1 12 -12 Z"/>
+            <text class="flag-tx" x="1046" y="822">D6 &middot; 650 sf</text>
+          </g>
+          <g class="flag f-b6">
+            <path class="flag-bg" d="M983 436 H1193 a12 12 0 0 1 12 12 V476 a12 12 0 0 1 -12 12 H983 a12 12 0 0 1 -12 -12 V473 L957 462 L971 451 V448 a12 12 0 0 1 12 -12 Z"/>
+            <text class="flag-tx" x="1088" y="473">B6 &middot; 400 sf</text>
+          </g>
+        </svg>
+      </div>
+      <p class="hint">Swipe sideways to see the whole plan.</p>
+      <p class="cap">Traced roughly to scale from the ReadySpaces floor plan (Rev C6). The dashed lines are only a picture of a box coming in through the drive-in door, not a measured route. A drive-in door is a garage-style door a vehicle can enter. Dock doors are loading doors at truck-bed height.</p>
+      <p class="sr">E2: front wall, beside drive-in door 1. D6: middle of the building, between D5 and D7. B6: inside, top middle, next to B7.</p>
+    </div>
+  </section>
+
+  <!-- 4. unit cards -->
+  <section class="sec" aria-labelledby="cards-h">
+    <div class="sec-head"><div>
+      <h2 id="cards-h">What each room costs</h2>
+      <p class="sub">The price on the quote now, and the price after the discount we are asking for. The quoted prices match the asking prices on a public listing site (WareCRE), so they are the starting point before any discount.</p>
+    </div></div>
+    <div class="cards">
+
+      <article class="card c-e2">
+        <div class="card-h"><span class="badge-u">E2</span><span class="size num">550 sf</span><span class="tag">Leaning here</span></div>
+        <p class="where">Front wall, right beside the drive-in door.</p>
+        <p class="avail"><svg class="avail-ic" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-cal" class="ic"/></svg><span>Open from Nov 27, 2026 <span class="avail-src">(ReadySpaces' website)</span></span></p>
+        <div>
+          <p class="lab">Quoted</p>
+          <p class="price"><span class="big num">$1,686.30</span><span class="per">/mo</span></p>
+          <p class="psf num">$3.07 per sf per month</p>
+        </div>
+        <dl class="disc">
+          <div><dt>At 10% off</dt><dd class="num">$1,517.67</dd></div>
+          <div><dt>At 20% off</dt><dd class="num">$1,349.04</dd></div>
+        </dl>
+        <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> Right at the garage door, so boxes travel the least.</span></p>
+        <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> Costs more per sf than B6 ($3.07 vs $2.55).</span></p>
+      </article>
+
+      <article class="card c-d6">
+        <div class="card-h"><span class="badge-u">D6</span><span class="size num">650 sf</span><span class="tag">Switch if 20% off</span></div>
+        <p class="where">Middle of the building, between D5 and D7.</p>
+        <p class="avail"><span class="mk warn" aria-hidden="true">!</span><span>Not listed as available on the website (checked Nov 2)</span></p>
+        <div>
+          <p class="lab">Quoted</p>
+          <p class="price"><span class="big na">Not quoted yet</span></p>
+          <p class="psf">Price per sf: not known yet</p>
+        </div>
+        <dl class="disc">
+          <div class="na"><dt>At 10% off</dt><dd>Not quoted yet</dd></div>
+          <div class="na"><dt>At 20% off</dt><dd>Not quoted yet</dd></div>
+        </dl>
+        <div class="ests">
+          <div class="est">
+            <p class="est-k">If D6 costs the same per sf as B6 (about $2.55)</p>
+            <p class="est-s">The closer match: B6 is also inside, with no door.</p>
+            <p class="est-v"><span>List</span><b class="num">about $1,658.48</b></p>
+            <p class="est-v"><span>At 20% off</span><b class="num">about $1,326.78</b></p>
+            <span class="est-tag">estimate, not a quote</span>
+          </div>
+          <div class="est">
+            <p class="est-k">If D6 costs the same per sf as E2 (about $3.07)</p>
+            <p class="est-v"><span>List</span><b class="num">about $1,992.90</b></p>
+            <p class="est-v"><span>At 20% off</span><b class="num">about $1,594.32</b></p>
+            <span class="est-tag">estimate, not a quote</span>
+          </div>
+        </div>
+        <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> The biggest room: 100 more sf than E2.</span></p>
+        <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> No price yet, and it sits inside, so boxes travel further than to E2.</span></p>
+      </article>
+
+      <article class="card c-b6">
+        <div class="card-h"><span class="badge-u">B6</span><span class="size num">400 sf</span><span class="tag">Lowest price</span></div>
+        <p class="where">Inside the building, top middle, next to B7. No door of its own on the outside wall.</p>
+        <p class="avail"><svg class="avail-ic" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-cal" class="ic"/></svg><span>Open from Nov 5, 2026 <span class="avail-src">(ReadySpaces' website)</span></span></p>
+        <div>
+          <p class="lab">Quoted</p>
+          <p class="price"><span class="big num">$1,020.60</span><span class="per">/mo</span></p>
+          <p class="psf num">$2.55 per sf per month</p>
+        </div>
+        <dl class="disc">
+          <div><dt>At 10% off</dt><dd class="num">$918.54</dd></div>
+          <div><dt>At 20% off</dt><dd class="num">$816.48</dd></div>
+        </dl>
+        <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> Lowest rent on the quote, and lowest per sf.</span></p>
+        <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> The smallest room, and deep inside: every box travels further.</span></p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 5. deal math chart -->
+  <section class="sec" aria-labelledby="chart-h">
+    <div class="sec-head"><div>
+      <h2 id="chart-h">The deal in bars</h2>
+      <p class="sub">Monthly cost, quoted versus our ask. Every bar uses one scale that starts at $0.</p>
+    </div></div>
+    <div class="chart-card" id="chart-card">
+      <svg id="chart" class="chart play" viewBox="0 0 640 388" role="img" aria-label="Bar chart of monthly cost on one scale starting at zero dollars. E2 as quoted is $1,686.30. E2 with 10% off is $1,517.67, which is our E2 deal. B6 as quoted is $1,020.60. B6 with 10% off is $918.54. D6 at 20% off is an estimate between $1,326.78 and $1,594.32, not a quote.">
+        <defs>
+          <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="9" height="9" class="hatch-bg"/>
+            <rect width="4" height="9" class="hatch-ln"/>
+          </pattern>
+        </defs>
+
+        <path class="axis" d="M16 50 V352 H516"/>
+
+        <text class="rl" x="24" y="76">E2, as quoted</text>
+        <rect class="bar bar-e2 quoted" style="--i:0" x="16" y="84" width="468.42" height="28" rx="4"/>
+        <text class="vl" style="--i:0" x="494.4" y="104">$1,686.30</text>
+
+        <text class="rl" x="24" y="132">E2, with our 10% off</text>
+        <rect class="bar bar-e2" style="--i:1" x="16" y="140" width="421.58" height="28" rx="4"/>
+        <text class="vl" style="--i:1" x="447.6" y="160">$1,517.67</text>
+
+        <text class="rl" x="24" y="188">B6, as quoted</text>
+        <rect class="bar bar-b6 quoted" style="--i:2" x="16" y="196" width="283.5" height="28" rx="4"/>
+        <text class="vl" style="--i:2" x="309.5" y="216">$1,020.60</text>
+
+        <text class="rl" x="24" y="244">B6, with 10% off</text>
+        <rect class="bar bar-b6" style="--i:3" x="16" y="252" width="255.15" height="28" rx="4"/>
+        <text class="vl" style="--i:3" x="281.2" y="272">$918.54</text>
+
+        <text class="rl" x="24" y="300">D6 at 20% off: estimate, not a quote</text>
+        <rect class="bar bar-d6" style="--i:4" x="384.55" y="308" width="74.32" height="28" rx="4"/>
+        <text class="vl" style="--i:4" x="374.5" y="328" text-anchor="end">$1,326.78 to $1,594.32</text>
+
+        <path class="ref" d="M437.58 44 V344"/>
+        <text class="ref-l" x="437.58" y="32" text-anchor="middle">E2 deal</text>
+
+        <text class="scale-t" x="16" y="378" text-anchor="middle">$0</text>
+        <text class="scale-t" x="266" y="378" text-anchor="middle">dollars per month, one scale for every bar</text>
+      </svg>
+    </div>
+    <p class="take">24 months of E2 at 10% off = <b class="num">$36,424.08</b> vs <b class="num">$40,471.20</b> at the quoted rate, saving <b class="num">$4,047.12</b>.</p>
+    <p class="take">The hatched D6 bar is a guess. It sits on both sides of the E2 deal line, so D6's real price decides which deal is cheaper. Wilson's rule stands either way: 20% off D6 and we take D6.</p>
+  </section>
+
+  <!-- 6. what the rent includes -->
+  <section class="sec" aria-labelledby="incl-h">
+    <div class="sec-head"><div>
+      <h2 id="incl-h">What the monthly price covers</h2>
+      <p class="sub">The quote compares ReadySpaces' one monthly price with a traditional warehouse that bills these costs on top.</p>
+    </div></div>
+
+    <div class="incl">
+      <div class="panel">
+        <h3>A traditional warehouse</h3>
+        <p class="est-note">ReadySpaces' own estimate. The quote says &quot;actual pricing may vary.&quot;</p>
+        <ul class="lines">
+          <li><span class="k">Rent</span><span class="trk"><span class="fill" style="width:100%"></span></span><span class="v num">$1,180.41</span></li>
+          <li><span class="k">CAMs (shared building costs)</span><span class="trk"><span class="fill" style="width:35.7%"></span></span><span class="v num">$421.58</span></li>
+          <li><span class="k">Electrical</span><span class="trk"><span class="fill" style="width:4.2%"></span></span><span class="v num">$49.50</span></li>
+          <li><span class="k">Internet</span><span class="trk"><span class="fill" style="width:7.6%"></span></span><span class="v num">$90.00</span></li>
+          <li><span class="k">Janitorial</span><span class="trk"><span class="fill" style="width:5.1%"></span></span><span class="v num">$60.00</span></li>
+          <li><span class="k">Trash and waste</span><span class="trk"><span class="fill" style="width:5.5%"></span></span><span class="v num">$65.00</span></li>
+        </ul>
+        <p class="tot"><span>Total the quote prints</span><b class="num">$1,806.48</b></p>
+      </div>
+      <div class="panel">
+        <h3>ReadySpaces, all in</h3>
+        <p class="est-note">For the 550 sf unit (E2). All in means everything is included.</p>
+        <p class="price"><span class="big num">$1,686.30</span><span class="per">/mo</span></p>
+        <ul class="checks">
+          <li><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>CAMs</li>
+          <li><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Electrical</li>
+          <li><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Internet</li>
+          <li><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Janitorial</li>
+          <li><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Trash and waste</li>
+        </ul>
+        <p class="save">The quote says that saves you <b class="num">$120.18</b> a month.</p>
+      </div>
+    </div>
+    <p class="warnbar"><span class="mk warn" aria-hidden="true">!</span><span><b>Heads up: the quote's own math is off.</b> The six lines in the first box add up to <b class="num">$1,866.49</b>, not the <b class="num">$1,806.48</b> it prints. The printed total looks like it skips the $60.00 janitorial line (the other five lines come to $1,806.49, a cent off). Counted in full, ReadySpaces saves us <b class="num">$180.19</b> a month on its own numbers, not $120.18. It is their marketing estimate, so we do not need it in the negotiation.</span></p>
+
+    <h3 class="strip-h">Also in the building</h3>
+    <ul class="amenities">
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-wifi" class="ic"/></svg></span><span class="am-t"><b>Free WiFi</b><span class="srcs"><span class="src">tour</span><span class="src">quote</span><span class="src">website</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-wc" class="ic"/></svg></span><span class="am-t"><b>Restrooms</b><span class="srcs"><span class="src">floor plan</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-cup" class="ic"/></svg></span><span class="am-t"><b>Kitchen / break room</b><span class="srcs"><span class="src">tour</span><span class="src">floor plan</span><span class="src">photo</span><span class="src">reviews</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-clock" class="ic"/></svg></span><span class="am-t"><b>24/7 access</b><span class="srcs"><span class="src">tour</span><span class="src">website</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-conf" class="ic"/></svg></span><span class="am-t"><b>Conference room</b><span class="srcs"><span class="src">floor plan</span><span class="src">website</span><span class="src">photo</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-mail" class="ic"/></svg></span><span class="am-t"><b>Mail room</b><span class="srcs"><span class="src">floor plan</span><span class="src">reviews</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-dock" class="ic"/></svg></span><span class="am-t"><b>Loading docks + drive-in doors</b><span class="srcs"><span class="src">floor plan</span><span class="src">website</span><span class="src">photo</span></span></span></li>
+      <li><span class="ico-wrap"><svg class="ico" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-fork" class="ic"/></svg></span><span class="am-t"><b>Forklift area</b><span class="srcs"><span class="src">floor plan</span><span class="src">website</span></span></span></li>
+    </ul>
+    <p class="srckey">Source tags: tour = Wilson saw it. quote = on the written quote. floor plan = drawn on the ReadySpaces plan. website = ReadySpaces' Braintree page. photo = in ReadySpaces' photo gallery. reviews = mentioned in tenant reviews.</p>
+  </section>
+
+  <!-- 6b. what tenants say -->
+  <section class="sec" aria-labelledby="say-h">
+    <div class="sec-head"><div>
+      <h2 id="say-h">What tenants say</h2>
+      <p class="sub">Almost everyone gives 5 stars, and the name that keeps coming up is Brett, the manager we are negotiating with.</p>
+    </div></div>
+
+    <div class="rate" data-rv>
+      <div class="panel rate-main">
+        <p class="rate-big"><span class="num">4.8</span><span class="sr"> out of 5 stars</span></p>
+        <div class="rate-r">
+          <span class="stars" aria-hidden="true">
+            <svg class="s-off" viewBox="0 0 150 28"><use href="#g-stars5" class="star-off"/></svg>
+            <svg class="s-on" viewBox="0 0 150 28"><use href="#g-stars5" class="star-on"/></svg>
+          </span>
+          <p class="rate-t">58 Google reviews</p>
+          <p class="rate-s">as of Nov 2, 2026</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>How the 58 break down</h3>
+        <p class="est-note">Every bar is on one scale: the full track is all 58 reviews.</p>
+        <ul class="dist" role="list">
+          <li><span class="dk">5 stars</span><span class="dtrk" aria-hidden="true"><span class="dfill" style="--i:0;width:93.1%"></span></span><span class="dv num">54</span></li>
+          <li><span class="dk">4 stars</span><span class="dtrk" aria-hidden="true"><span class="dfill" style="--i:1;width:0%"></span></span><span class="dv num">0</span></li>
+          <li><span class="dk">3 stars</span><span class="dtrk" aria-hidden="true"><span class="dfill" style="--i:2;width:1.72%"></span></span><span class="dv num">1</span></li>
+          <li><span class="dk">2 stars</span><span class="dtrk" aria-hidden="true"><span class="dfill" style="--i:3;width:0%"></span></span><span class="dv num">0</span></li>
+          <li><span class="dk">1 star</span><span class="dtrk" aria-hidden="true"><span class="dfill" style="--i:4;width:5.17%"></span></span><span class="dv num">3</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="strip-h">What reviewers say</h3>
+    <div class="quotes">
+      <figure class="qcard" data-rv>
+        <svg class="qs" viewBox="0 0 150 28" role="img" aria-label="5 stars"><use href="#g-stars5" class="star-on"/></svg>
+        <p class="qsum">Everything in one place: loading dock, security, and UPS and Postal Service pickups. Says Brett keeps the building in good shape and keeps adding to it.</p>
+        <figcaption><b>Robert</b> &middot; Google &middot; 2 weeks ago</figcaption>
+      </figure>
+      <figure class="qcard" data-rv>
+        <svg class="qs" viewBox="0 0 150 28" role="img" aria-label="5 stars"><use href="#g-stars5" class="star-on"/></svg>
+        <blockquote><p>&ldquo;Brett manages the facility like a well oiled machine.&rdquo;</p></blockquote>
+        <p class="qsum">A tenant for about a year, who ranks it among the best warehouses they have worked in.</p>
+        <figcaption><b>Red Oak Construction</b> &middot; Google &middot; a month ago</figcaption>
+      </figure>
+      <figure class="qcard" data-rv>
+        <svg class="qs" viewBox="0 0 150 28" role="img" aria-label="5 stars"><use href="#g-stars5" class="star-on"/></svg>
+        <p class="qsum">Calls it a standout office and warehouse space. Found Brett clear and friendly, and decided after one tour.</p>
+        <figcaption><b>Ben A.</b> &middot; Google &middot; 4 months ago</figcaption>
+      </figure>
+      <figure class="qcard wide" data-rv>
+        <svg class="qs" viewBox="0 0 150 28" role="img" aria-label="5 stars"><use href="#g-stars5" class="star-on"/></svg>
+        <p class="qsum">Says the price is very good for what comes with it: WiFi, a mailing address, power, a kitchen with coffee and a fridge, loading bays, trash pickup and a forklift.</p>
+        <figcaption><b>Mark K.</b> &middot; review shown on ReadySpaces' Braintree page &middot; no date</figcaption>
+      </figure>
+      <figure class="qcard" data-rv>
+        <svg class="qs" viewBox="0 0 150 28" role="img" aria-label="5 stars"><use href="#g-stars5" class="star-on"/></svg>
+        <p class="qsum">Says Brett is easy to talk to and works with members whenever something comes up.</p>
+        <figcaption><b>Debba C.</b> &middot; Google &middot; edited 4 weeks ago</figcaption>
+      </figure>
+    </div>
+    <p class="srckey">Dates as Google showed them on Nov 2, 2026. The summaries are ours; the one line in quote marks is the reviewer's own words.</p>
+
+    <div class="panel lows">
+      <h3>The low ones, honestly</h3>
+      <p class="est-note">4 of the 58 reviews are below 5 stars.</p>
+      <ul>
+        <li>One is a neighbor upset about overnight truck parking (about 5 years ago, under an earlier manager).</li>
+        <li>One is from someone who got an unwanted package and asked if it was a scam (2 years ago).</li>
+        <li>Two are star ratings with no words (about 5 years ago).</li>
+      </ul>
+    </div>
+
+    <aside class="panel bigger" aria-labelledby="big-h">
+      <h3 id="big-h">Bigger picture</h3>
+      <p>ReadySpaces' head-office company in Los Angeles (ReadySpaces Management LLC) has a D rating from the Better Business Bureau (BBB, a US complaints tracker): 3 complaints in 3 years, rated down for not answering or not resolving them. We could read only two of the three complaints, and neither is about Braintree.</p>
+      <p>A competitor's blog (Saltbox, Jan 2026) quotes Google reviews, mostly without naming the site, about slow deposit refunds and slow repairs. None of the 4 low Braintree reviews is about that. Worth getting deposit terms in writing.</p>
+    </aside>
+  </section>
+
+  <!-- 6c. where it is -->
+  <section class="sec" aria-labelledby="geo-h">
+    <div class="sec-head"><div>
+      <h2 id="geo-h">Where it is</h2>
+      <p class="sub">530 West St, Braintree, MA 02184.</p>
+    </div></div>
+    <div class="geo-grid">
+      <div>
+        <div class="map-card"><iframe src="https://maps.google.com/maps?q=530%20West%20St%2C%20Braintree%2C%20MA%2002184&amp;z=14&amp;output=embed" title="Map of 530 West St, Braintree" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=530%20West%20St%2C%20Braintree%2C%20MA%2002184" target="_blank" rel="noopener"><svg viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-pin"/></svg>Open in Google Maps<span class="sr"> (opens in a new tab)</span></a>
+      </div>
+      <ul class="geo" role="list">
+        <li>
+          <p><b>In North Braintree.</b> Braintree borders Quincy to the north.</p>
+          <p class="fsrc">Source: CommercialCafe listing, Wikipedia.</p>
+        </li>
+        <li>
+          <p><b>About 1 mile to I-93</b> (a major highway), with connections to Route 3.</p>
+          <p class="fsrc">Source: ReadySpaces' Braintree page.</p>
+        </li>
+        <li>
+          <p><b>Braintree Station on the MBTA Red Line is nearby.</b> The MBTA is Boston's public transit system.</p>
+          <p class="fsrc">Source: ReadySpaces' Braintree page.</p>
+        </li>
+        <li>
+          <p><b>The building dates from 1964.</b></p>
+          <p class="fsrc">Source: listing sites (CommercialCafe, WareCRE).</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. still unknown -->
+  <section class="sec" aria-labelledby="todo-h">
+    <div class="sec-head"><div>
+      <h2 id="todo-h">Still unknown before we sign</h2>
+    </div></div>
+    <ul class="todo">
+      <li><span class="qm">?</span><div><b>D6 price.</b> Not on the quote, and D6 is not listed as available on ReadySpaces' website (checked Nov 2). Brett has to tell us its price and when it opens.</div></li>
+      <li><span class="qm">?</span><div><b>Deposit.</b> The amount is not stated anywhere yet. Also ask how fast it comes back when we leave: a competitor's blog (Saltbox) quotes reviews, at sites it does not name, about slow refunds.</div></li>
+      <li><span class="qm">?</span><div><b>Term.</b> We offered 24 months. ReadySpaces' usual starting term is about 3 months, then month to month, so they still have to agree to the longer term.</div></li>
+      <li><span class="qm">?</span><div><b>Open tops.</b> In ReadySpaces' photos of rooms for rent, the walls stop well below the roof, so those rooms are open at the top. We have no photo of E2 or D6, so ask whether theirs are open too, and about dust and security for boxed stock.</div></li>
+      <li><span class="qm">!</span><div><b>No hold on a unit.</b> A unit is only secured once we sign the license agreement (the rental contract) and pay the deposit and the prorated first month (a part-month share). Until that payment lands, ReadySpaces keeps offering it to other businesses.</div></li>
+      <li><span class="qm">!</span><div class="wrapword"><b>Insurance before move-in.</b> We need a certificate of insurance (COI, proof that we are insured). Certificate holder (who receives it): 530 West Warehousing LLC. Additional insureds (other companies the policy also protects): 530 West Warehousing LLC, ReadySpaces Management LLC, ADG 530 West St LLC. ReadySpaces' website also says tenant insurance is required.</div></li>
+    </ul>
+  </section>
+
+  <!-- 8. sources -->
+  <footer class="foot">
+    <p><b>Sources:</b> ReadySpaces written quote (Oct 28, 2026) &middot; floor plan Rev C6 &middot; Brett Skolnick emails (Oct 28, 2026) &middot; Wilson's tour notes &middot; readyspaces.com <a href="https://readyspaces.com/location/boston/" target="_blank" rel="noopener">Boston</a> and <a href="https://readyspaces.com/location/boston/braintree/" target="_blank" rel="noopener">Braintree</a> pages (read Nov 2, 2026) &middot; <a href="https://www.google.com/maps/place/ReadySpaces/@42.2110431,-71.0289679,17z" target="_blank" rel="noopener">Google Maps reviews</a> (read Nov 2, 2026) &middot; <a href="https://techcrunch.com/?p=2441906" target="_blank" rel="noopener">TechCrunch</a> (Nov 17, 2022) &middot; <a href="https://www.bbb.org/us/ca/los-angeles/profile/office-space-rental/readyspaces-management-llc-1216-1000036547" target="_blank" rel="noopener">BBB.org profile</a> &middot; <a href="https://warecre.com/property/boston/readyspaces-braintree-530-west-street/" target="_blank" rel="noopener">WareCRE</a> and <a href="https://www.commercialcafe.com/commercial-property/us/ma/braintree/530-west-street-1/" target="_blank" rel="noopener">CommercialCafe</a> listings &middot; <a href="https://www.saltbox.com/blog/readyspaces-alternatives" target="_blank" rel="noopener">Saltbox blog</a> (a competitor, Jan 26, 2026) &middot; <a href="https://www.fulfill.com/partners/readyspaces" target="_blank" rel="noopener">Fulfill.com</a> &middot; <a href="https://warespace.com/comparisons/warespace-vs-readyspaces" target="_blank" rel="noopener">Warespace comparison page</a> (a competitor) &middot; <a href="https://en.wikipedia.org/wiki/Braintree,_Massachusetts" target="_blank" rel="noopener">Wikipedia</a> (Braintree, Massachusetts).</p>
+    <p>Photos: ReadySpaces.</p>
+    <p>The discount math is our own arithmetic on the quote numbers, and the D6 figures are estimates, not quotes. Private planning page: not legal or financial advice, and nothing here is a promise of what ReadySpaces will agree to.</p>
+  </footer>
+
+</main>
+
+<!-- photo viewer: opened from the photo grid, Esc closes, arrow keys go to the next or previous photo -->
+<dialog id="lb" class="lb" aria-label="Photo viewer">
+  <div class="lb-card">
+    <div class="lb-top">
+      <span class="lb-count" id="lb-count">1 of 8</span>
+      <button type="button" class="lb-btn" id="lb-close" aria-label="Close photo viewer" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Close</button>
+    </div>
+    <img class="lb-img" id="lb-img" alt="Selected photo" width="808" height="538">
+    <p class="lb-cap" id="lb-cap" aria-live="polite"></p>
+    <div class="lb-nav">
+      <button type="button" class="lb-btn" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Previous</button>
+      <button type="button" class="lb-btn" id="lb-next" aria-label="Next photo">Next<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var t0=Date.now();
+  var plan=document.getElementById('plan');
+  var chart=document.getElementById('chart');
+  var btn=document.getElementById('replay');
+  var scroller=document.getElementById('plan-scroll');
+  var calm=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  function restart(el){
+    if(!el||calm){return;}
+    el.classList.remove('play');
+    void el.getBoundingClientRect();
+    el.classList.add('play');
+  }
+
+  if(btn&&plan){btn.addEventListener('click',function(){restart(plan);});}
+
+  if(scroller&&scroller.scrollWidth>scroller.clientWidth){
+    scroller.scrollLeft=(scroller.scrollWidth-scroller.clientWidth)/2;
+  }
+
+  /* replay once when a block first scrolls into view, if it has been sitting off screen */
+  function watch(box,el,wanted){
+    if(calm||!box||!el||!('IntersectionObserver' in window)){return;}
+    var h=box.offsetHeight||1;
+    var th=Math.max(0.15,Math.min(wanted,(window.innerHeight*0.8)/h));
+    var io=new IntersectionObserver(function(list){
+      for(var i=0;i<list.length;i++){
+        if(list[i].isIntersecting){
+          io.disconnect();
+          if(Date.now()-t0>1200){restart(el);}
+          return;
+        }
+      }
+    },{threshold:th});
+    io.observe(box);
+  }
+  watch(document.getElementById('plan-card'),plan,0.6);
+  watch(document.getElementById('chart-card'),chart,0.5);
+
+  /* ---------- scroll reveals ----------
+     Everything is visible by default. Only blocks that start below the fold get hidden,
+     and only once this script has run, so nothing on screen flashes and a failed script hides nothing. */
+  var rv=[].slice.call(document.querySelectorAll('[data-rv]'));
+  if(!calm&&rv.length&&'IntersectionObserver' in window){
+    try{
+      var rvIO=new IntersectionObserver(function(list){
+        var hit=[],i;
+        for(i=0;i<list.length;i++){
+          if(list[i].isIntersecting){hit.push(list[i].target);rvIO.unobserve(list[i].target);}
+        }
+        hit.sort(function(a,b){return rv.indexOf(a)-rv.indexOf(b);});
+        for(i=0;i<hit.length;i++){
+          hit[i].style.setProperty('--d',Math.min(i,6));
+          hit[i].classList.remove('rv-wait');
+          hit[i].classList.add('rv-in');
+        }
+      },{threshold:0.1,rootMargin:'0px 0px -5% 0px'});
+      var vh=window.innerHeight||document.documentElement.clientHeight;
+      rv.forEach(function(el){
+        if(el.getBoundingClientRect().top>=vh*0.98){el.classList.add('rv-wait');rvIO.observe(el);}
+      });
+    }catch(err){
+      rv.forEach(function(el){el.classList.remove('rv-wait');});
+    }
+  }
+
+  /* ---------- photo viewer ----------
+     Without this script each photo is a plain link to the full-size picture. */
+  var dlg=document.getElementById('lb');
+  var thumbs=[].slice.call(document.querySelectorAll('.tile a'));
+  var lbImg=document.getElementById('lb-img');
+  var lbCap=document.getElementById('lb-cap');
+  var lbNum=document.getElementById('lb-count');
+  var cur=0,opener=null;
+
+  function show(n){
+    var a,im,cap;
+    cur=(n+thumbs.length)%thumbs.length;
+    a=thumbs[cur];
+    im=a.querySelector('img');
+    cap=a.parentNode.querySelector('figcaption');
+    lbImg.src=a.getAttribute('href');
+    lbImg.alt=im.getAttribute('alt')||'';
+    lbImg.setAttribute('width',im.getAttribute('width'));
+    lbImg.setAttribute('height',im.getAttribute('height'));
+    lbCap.innerHTML=cap?cap.innerHTML:'';
+    lbNum.textContent=(cur+1)+' of '+thumbs.length;
+    if(!calm){lbImg.classList.remove('swap');void lbImg.offsetWidth;lbImg.classList.add('swap');}
+  }
+
+  if(dlg&&thumbs.length&&typeof dlg.showModal==='function'){
+    thumbs.forEach(function(a,i){
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        opener=a;
+        show(i);
+        document.documentElement.classList.add('lb-open');
+        dlg.showModal();
+      });
+    });
+    document.getElementById('lb-close').addEventListener('click',function(){dlg.close();});
+    document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1);});
+    document.getElementById('lb-next').addEventListener('click',function(){show(cur+1);});
+    dlg.addEventListener('click',function(e){if(e.target===dlg){dlg.close();}});
+    dlg.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'){e.preventDefault();show(cur+1);}
+      else if(e.key==='ArrowLeft'){e.preventDefault();show(cur-1);}
+    });
+    dlg.addEventListener('close',function(){
+      document.documentElement.classList.remove('lb-open');
+      if(opener&&typeof opener.focus==='function'){opener.focus();}
+    });
+  }
+})();
+</script>
+</body>
+</html>
