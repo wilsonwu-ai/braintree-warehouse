@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Braintree Unit Pick</title>
-<meta name="description" content="Three warehouse rooms at ReadySpaces Braintree: photos, tenant reviews, what each room costs, and the deal Wilson asked for.">
+<title>Braintree Unit: E2</title>
+<meta name="description" content="The warehouse room we are taking at ReadySpaces Braintree (E2): what it costs, photos, tenant reviews and what happens next.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Which Braintree unit?">
-<meta property="og:description" content="Three warehouse rooms at ReadySpaces Braintree: photos, tenant reviews, what each room costs, and the deal Wilson asked for.">
+<meta property="og:title" content="We're taking E2 in Braintree">
+<meta property="og:description" content="The warehouse room we are taking at ReadySpaces Braintree (E2): what it costs, photos, tenant reviews and what happens next.">
 <meta property="og:url" content="https://wilsonwu-ai.github.io/braintree-warehouse/">
 <meta property="og:image" content="https://wilsonwu-ai.github.io/braintree-warehouse/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -162,6 +162,7 @@ h1{font-size:clamp(2.3rem,8vw,4rem);margin-top:10px}
 .ans-price .was s{text-decoration-thickness:2px}
 .ans-switch p{margin-top:8px}
 .ans-switch .small{font-size:.95rem;color:var(--ink-2)}
+.ans-sub{margin-top:8px;color:var(--ink-2)}
 @media (max-width:720px){
   .answer{grid-template-columns:minmax(0,1fr)}
   .ans-switch{border-left:0;border-top:2px dashed var(--line-strong)}
@@ -268,7 +269,7 @@ h1{font-size:clamp(2.3rem,8vw,4rem);margin-top:10px}
 .chart .ref{stroke:var(--ink);stroke-width:2.5;stroke-dasharray:7 5}
 .chart .bar-e2{fill:var(--c-e2)}
 .chart .bar-b6{fill:var(--c-b6)}
-.chart .quoted{fill-opacity:.4}
+.chart .quoted,.chart .ghost{fill-opacity:.4}
 .chart .bar-d6{fill:url(#hatch);stroke:var(--c-d6-line);stroke-width:2.5}
 .chart .hatch-bg{fill:var(--hatch-bg)}
 .chart .hatch-ln{fill:var(--hatch-ln)}
@@ -321,6 +322,7 @@ h1{font-size:clamp(2.3rem,8vw,4rem);margin-top:10px}
 .todo li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:start;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px}
 .qm{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--on-gold);font-weight:800}
 .todo .wrapword{overflow-wrap:anywhere}
+.strip-h+.todo{margin-top:12px}
 .foot{margin-top:46px;padding-top:16px;border-top:2px solid var(--ink);font-size:.88rem;color:var(--ink-2)}
 .foot p+p{margin-top:6px}
 
@@ -583,9 +585,9 @@ html.lb-open{overflow:hidden}
   <!-- 1. title block -->
   <div class="hero">
     <p class="eyebrow">ReadySpaces Braintree &middot; 530 West St</p>
-    <h1>Which Braintree unit?</h1>
-    <p class="lede">We want to rent a room inside a shared warehouse: we are looking at three rooms (two have prices on the quote), and here is what they cost and what we are asking for.</p>
-    <p class="status"><span class="chip">Update, Nov 2</span><span>Wilson sent this offer to Brett, the building's general manager. Waiting on his reply.</span></p>
+    <h1>We're taking E2</h1>
+    <p class="lede">We are renting a room inside a shared warehouse in Braintree. We looked at three rooms and picked E2, the one right beside the garage door. ReadySpaces would not give a discount, so we pay the quoted price.</p>
+    <p class="status"><span class="chip">Update, Nov 4</span><span>Brett, the building's general manager, said on Nov&nbsp;3 that ReadySpaces is not offering discounts on these rooms for now. Wilson took E2 at the quoted price that afternoon and sent our company details. Next: Brett sends the license agreement.</span></p>
     <ul class="legend" aria-label="The three rooms">
       <li class="lg-e2"><span class="sw"></span>E2 &middot; 550 sf</li>
       <li class="lg-d6"><span class="sw"></span>D6 &middot; 650 sf</li>
@@ -599,20 +601,21 @@ html.lb-open{overflow:hidden}
   </div>
 
   <!-- 2. the answer -->
-  <section class="answer" aria-label="Our ask and our switch rule">
+  <section class="answer" aria-label="The deal we took">
     <div class="ans-main">
-      <span class="chip">Our ask</span>
-      <p class="ans-line">24 months in exchange for 10% off E2</p>
+      <span class="chip">The deal</span>
+      <p class="ans-line">E2, 550 sf, at the quoted price</p>
       <p class="ans-price">
-        <span class="now num">$1,517.67</span><span class="per">/mo</span>
-        <span class="was"><span>from</span> <s class="num">$1,686.30</s></span>
+        <span class="now num">$1,686.30</span><span class="per">/mo</span>
       </p>
+      <p class="ans-sub">That is <b class="num">$20,235.60</b> a year. We asked to move in on <b>December 1, 2026</b>.</p>
     </div>
     <div class="ans-switch">
-      <span class="chip alt">Switch rule (Wilson's)</span>
-      <p><b>Take D6 (650 sf) instead if ReadySpaces gives 20% off it.</b></p>
-      <p class="small">D6 at 20% off costs no more than the E2 deal as long as D6's list price (the price on the quote) is at or below <b class="num">$1,897.09</b>/mo. D6's price is not on the quote yet.</p>
-      <p class="note small"><span class="mk warn" aria-hidden="true">!</span><span>D6 is not listed as available on ReadySpaces' website right now (checked Nov 2).</span></p>
+      <span class="chip alt">What changed</span>
+      <p><b>No discount.</b> We asked for 10% off (<span class="num">$1,517.67</span>/mo) in return for a 24-month term. ReadySpaces said no to any discount on these rooms for now.</p>
+      <p class="small">So we are not signing up for 24 months. We asked for ReadySpaces' standard term instead; the license agreement will say how long it is.</p>
+      <p class="small">Brett offered to put us on the waitlist for a room that may open up away from the loading area, at a lower price per square foot. We chose E2, right at the garage door.</p>
+      <p class="note small"><span class="mk warn" aria-hidden="true">!</span><span>D6 is off the table: ReadySpaces never gave it a price.</span></p>
     </div>
   </section>
 
@@ -660,8 +663,8 @@ html.lb-open{overflow:hidden}
         <p class="fsrc">Source: ReadySpaces' Braintree page.</p>
       </li>
       <li class="deal">
-        <p><b>ReadySpaces' usual starting term is about 3 months,</b> then month to month (renewing each month, with no long contract). Our 24 months is much longer, so we are asking for 10% off in return.</p>
-        <p class="fsrc">Source: third-party sites (Fulfill.com, Saltbox, Warespace).</p>
+        <p><b>ReadySpaces' usual starting term is about 3 months,</b> then month to month (renewing each month, with no long contract). We had offered 24 months in return for 10% off. With no discount, we asked for their standard term instead, so we are not committing to two years.</p>
+        <p class="fsrc">Source: third-party sites (Fulfill.com, Saltbox, Warespace). Our license agreement will state our actual term.</p>
       </li>
     </ul>
   </section>
@@ -687,7 +690,7 @@ html.lb-open{overflow:hidden}
       </figure>
       <figure class="tile" data-rv>
         <a href="img/unit-b6.jpg" aria-haspopup="dialog"><img src="img/unit-b6.jpg" width="761" height="571" loading="lazy" decoding="async" alt="Looking into B6 from above: a bare room with a concrete floor and corrugated metal walls on green steel frames."></a>
-        <figcaption><b>Inside B6,</b> one of our three options (photo from ReadySpaces' B6 listing).</figcaption>
+        <figcaption><b>Inside B6,</b> one of the three rooms we looked at (photo from ReadySpaces' B6 listing).</figcaption>
       </figure>
       <figure class="tile" data-rv>
         <a href="img/break-room.jpg" aria-haspopup="dialog"><img src="img/break-room.jpg" width="942" height="627" loading="lazy" decoding="async" alt="The break room: two vending machines for cold drinks and snacks, a plant, and round white tables with gray chairs."></a>
@@ -714,7 +717,7 @@ html.lb-open{overflow:hidden}
     <div class="sec-head">
       <div>
         <h2 id="plan-h">Where the three rooms sit</h2>
-        <p class="sub">E2 is right at the garage door. D6 and B6 are deeper inside, so every box travels further.</p>
+        <p class="sub">We picked E2, right at the garage door. D6 and B6 are deeper inside, so every box would travel further.</p>
       </div>
       <button type="button" class="replay" id="replay" aria-label="Replay the floor plan animation">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg>
@@ -929,57 +932,38 @@ html.lb-open{overflow:hidden}
   <section class="sec" aria-labelledby="cards-h">
     <div class="sec-head"><div>
       <h2 id="cards-h">What each room costs</h2>
-      <p class="sub">The price on the quote now, and the price after the discount we are asking for. The quoted prices match the asking prices on a public listing site (WareCRE), so they are the starting point before any discount.</p>
+      <p class="sub">The prices on ReadySpaces' written quote. We asked for a discount and ReadySpaces said no, so the quoted price is what we pay. The quoted prices match the asking prices on a public listing site (WareCRE).</p>
     </div></div>
     <div class="cards">
 
       <article class="card c-e2">
-        <div class="card-h"><span class="badge-u">E2</span><span class="size num">550 sf</span><span class="tag">Leaning here</span></div>
+        <div class="card-h"><span class="badge-u">E2</span><span class="size num">550 sf</span><span class="tag">Our pick</span></div>
         <p class="where">Front wall, right beside the drive-in door.</p>
-        <p class="avail"><svg class="avail-ic" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-cal" class="ic"/></svg><span>Open from Nov 27, 2026 <span class="avail-src">(ReadySpaces' website)</span></span></p>
+        <p class="avail"><svg class="avail-ic" viewBox="-20 -20 40 40" aria-hidden="true"><use href="#g-cal" class="ic"/></svg><span>Open from Nov 27, 2026 <span class="avail-src">(ReadySpaces' website)</span>. We asked to move in Dec 1.</span></p>
         <div>
-          <p class="lab">Quoted</p>
+          <p class="lab">Quoted, and what we pay</p>
           <p class="price"><span class="big num">$1,686.30</span><span class="per">/mo</span></p>
           <p class="psf num">$3.07 per sf per month</p>
         </div>
         <dl class="disc">
-          <div><dt>At 10% off</dt><dd class="num">$1,517.67</dd></div>
-          <div><dt>At 20% off</dt><dd class="num">$1,349.04</dd></div>
+          <div><dt>We asked for 10% off</dt><dd class="num">$1,517.67</dd></div>
+          <div><dt>ReadySpaces' answer</dt><dd>No discount</dd></div>
         </dl>
         <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> Right at the garage door, so boxes travel the least.</span></p>
         <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> Costs more per sf than B6 ($3.07 vs $2.55).</span></p>
       </article>
 
       <article class="card c-d6">
-        <div class="card-h"><span class="badge-u">D6</span><span class="size num">650 sf</span><span class="tag">Switch if 20% off</span></div>
+        <div class="card-h"><span class="badge-u">D6</span><span class="size num">650 sf</span><span class="tag">Never priced</span></div>
         <p class="where">Middle of the building, between D5 and D7.</p>
         <p class="avail"><span class="mk warn" aria-hidden="true">!</span><span>Not listed as available on the website (checked Nov 2)</span></p>
         <div>
           <p class="lab">Quoted</p>
-          <p class="price"><span class="big na">Not quoted yet</span></p>
-          <p class="psf">Price per sf: not known yet</p>
-        </div>
-        <dl class="disc">
-          <div class="na"><dt>At 10% off</dt><dd>Not quoted yet</dd></div>
-          <div class="na"><dt>At 20% off</dt><dd>Not quoted yet</dd></div>
-        </dl>
-        <div class="ests">
-          <div class="est">
-            <p class="est-k">If D6 costs the same per sf as B6 (about $2.55)</p>
-            <p class="est-s">The closer match: B6 is also inside, with no door.</p>
-            <p class="est-v"><span>List</span><b class="num">about $1,658.48</b></p>
-            <p class="est-v"><span>At 20% off</span><b class="num">about $1,326.78</b></p>
-            <span class="est-tag">estimate, not a quote</span>
-          </div>
-          <div class="est">
-            <p class="est-k">If D6 costs the same per sf as E2 (about $3.07)</p>
-            <p class="est-v"><span>List</span><b class="num">about $1,992.90</b></p>
-            <p class="est-v"><span>At 20% off</span><b class="num">about $1,594.32</b></p>
-            <span class="est-tag">estimate, not a quote</span>
-          </div>
+          <p class="price"><span class="big na">Never quoted</span></p>
+          <p class="psf">Brett never gave D6 a price, so it is out.</p>
         </div>
         <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> The biggest room: 100 more sf than E2.</span></p>
-        <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> No price yet, and it sits inside, so boxes travel further than to E2.</span></p>
+        <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> Never priced, and it sits inside, so boxes would travel further than to E2.</span></p>
       </article>
 
       <article class="card c-b6">
@@ -991,10 +975,6 @@ html.lb-open{overflow:hidden}
           <p class="price"><span class="big num">$1,020.60</span><span class="per">/mo</span></p>
           <p class="psf num">$2.55 per sf per month</p>
         </div>
-        <dl class="disc">
-          <div><dt>At 10% off</dt><dd class="num">$918.54</dd></div>
-          <div><dt>At 20% off</dt><dd class="num">$816.48</dd></div>
-        </dl>
         <p class="note"><span class="mk ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Good.</b> Lowest rent on the quote, and lowest per sf.</span></p>
         <p class="note"><span class="mk warn" aria-hidden="true">!</span><span><b>Watch out.</b> The smallest room, and deep inside: every box travels further.</span></p>
       </article>
@@ -1002,52 +982,34 @@ html.lb-open{overflow:hidden}
     </div>
   </section>
 
-  <!-- 5. deal math chart -->
+  <!-- 5. price chart -->
   <section class="sec" aria-labelledby="chart-h">
     <div class="sec-head"><div>
-      <h2 id="chart-h">The deal in bars</h2>
-      <p class="sub">Monthly cost, quoted versus our ask. Every bar uses one scale that starts at $0.</p>
+      <h2 id="chart-h">What we pay, in bars</h2>
+      <p class="sub">Monthly cost. Every bar uses one scale that starts at $0.</p>
     </div></div>
     <div class="chart-card" id="chart-card">
-      <svg id="chart" class="chart play" viewBox="0 0 640 388" role="img" aria-label="Bar chart of monthly cost on one scale starting at zero dollars. E2 as quoted is $1,686.30. E2 with 10% off is $1,517.67, which is our E2 deal. B6 as quoted is $1,020.60. B6 with 10% off is $918.54. D6 at 20% off is an estimate between $1,326.78 and $1,594.32, not a quote.">
-        <defs>
-          <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-            <rect width="9" height="9" class="hatch-bg"/>
-            <rect width="4" height="9" class="hatch-ln"/>
-          </pattern>
-        </defs>
+      <svg id="chart" class="chart play" viewBox="0 0 640 236" role="img" aria-label="Bar chart of monthly cost on one scale starting at zero dollars. E2 at the quoted price, which is what we pay, is $1,686.30. E2 with the 10% off we asked for would have been $1,517.67, but ReadySpaces said no. B6, the smaller room, is quoted at $1,020.60.">
+        <path class="axis" d="M16 18 V200 H516"/>
 
-        <path class="axis" d="M16 50 V352 H516"/>
+        <text class="rl" x="24" y="36">E2, what we pay (the quoted price)</text>
+        <rect class="bar bar-e2" style="--i:0" x="16" y="44" width="468.42" height="28" rx="4"/>
+        <text class="vl" style="--i:0" x="494.4" y="64">$1,686.30</text>
 
-        <text class="rl" x="24" y="76">E2, as quoted</text>
-        <rect class="bar bar-e2 quoted" style="--i:0" x="16" y="84" width="468.42" height="28" rx="4"/>
-        <text class="vl" style="--i:0" x="494.4" y="104">$1,686.30</text>
+        <text class="rl" x="24" y="92">E2 with the 10% off we asked for: ReadySpaces said no</text>
+        <rect class="bar bar-e2 ghost" style="--i:1" x="16" y="100" width="421.58" height="28" rx="4"/>
+        <text class="vl" style="--i:1" x="447.6" y="120">$1,517.67</text>
 
-        <text class="rl" x="24" y="132">E2, with our 10% off</text>
-        <rect class="bar bar-e2" style="--i:1" x="16" y="140" width="421.58" height="28" rx="4"/>
-        <text class="vl" style="--i:1" x="447.6" y="160">$1,517.67</text>
+        <text class="rl" x="24" y="148">B6, the smaller room, as quoted</text>
+        <rect class="bar bar-b6 ghost" style="--i:2" x="16" y="156" width="283.5" height="28" rx="4"/>
+        <text class="vl" style="--i:2" x="309.5" y="176">$1,020.60</text>
 
-        <text class="rl" x="24" y="188">B6, as quoted</text>
-        <rect class="bar bar-b6 quoted" style="--i:2" x="16" y="196" width="283.5" height="28" rx="4"/>
-        <text class="vl" style="--i:2" x="309.5" y="216">$1,020.60</text>
-
-        <text class="rl" x="24" y="244">B6, with 10% off</text>
-        <rect class="bar bar-b6" style="--i:3" x="16" y="252" width="255.15" height="28" rx="4"/>
-        <text class="vl" style="--i:3" x="281.2" y="272">$918.54</text>
-
-        <text class="rl" x="24" y="300">D6 at 20% off: estimate, not a quote</text>
-        <rect class="bar bar-d6" style="--i:4" x="384.55" y="308" width="74.32" height="28" rx="4"/>
-        <text class="vl" style="--i:4" x="374.5" y="328" text-anchor="end">$1,326.78 to $1,594.32</text>
-
-        <path class="ref" d="M437.58 44 V344"/>
-        <text class="ref-l" x="437.58" y="32" text-anchor="middle">E2 deal</text>
-
-        <text class="scale-t" x="16" y="378" text-anchor="middle">$0</text>
-        <text class="scale-t" x="266" y="378" text-anchor="middle">dollars per month, one scale for every bar</text>
+        <text class="scale-t" x="16" y="226" text-anchor="middle">$0</text>
+        <text class="scale-t" x="266" y="226" text-anchor="middle">dollars per month, one scale for every bar</text>
       </svg>
     </div>
-    <p class="take">24 months of E2 at 10% off = <b class="num">$36,424.08</b> vs <b class="num">$40,471.20</b> at the quoted rate, saving <b class="num">$4,047.12</b>.</p>
-    <p class="take">The hatched D6 bar is a guess. It sits on both sides of the E2 deal line, so D6's real price decides which deal is cheaper. Wilson's rule stands either way: 20% off D6 and we take D6.</p>
+    <p class="take">At the quoted price, E2 costs <b class="num">$1,686.30</b> a month, or <b class="num">$20,235.60</b> a year.</p>
+    <p class="take">The discount we asked for would have saved <b class="num">$168.63</b> a month (<b class="num">$2,023.56</b> a year), but only with a <span style="white-space:nowrap">24-month</span> commitment. Without it, we asked for ReadySpaces' standard term instead.</p>
   </section>
 
   <!-- 6. what the rent includes -->
@@ -1085,7 +1047,7 @@ html.lb-open{overflow:hidden}
         <p class="save">The quote says that saves you <b class="num">$120.18</b> a month.</p>
       </div>
     </div>
-    <p class="warnbar"><span class="mk warn" aria-hidden="true">!</span><span><b>Heads up: the quote's own math is off.</b> The six lines in the first box add up to <b class="num">$1,866.49</b>, not the <b class="num">$1,806.48</b> it prints. The printed total looks like it skips the $60.00 janitorial line (the other five lines come to $1,806.49, a cent off). Counted in full, ReadySpaces saves us <b class="num">$180.19</b> a month on its own numbers, not $120.18. It is their marketing estimate, so we do not need it in the negotiation.</span></p>
+    <p class="warnbar"><span class="mk warn" aria-hidden="true">!</span><span><b>Heads up: the quote's own math is off.</b> The six lines in the first box add up to <b class="num">$1,866.49</b>, not the <b class="num">$1,806.48</b> it prints. The printed total looks like it skips the $60.00 janitorial line (the other five lines come to $1,806.49, a cent off). Counted in full, ReadySpaces saves us <b class="num">$180.19</b> a month on its own numbers, not $120.18. It is their marketing estimate, not a bill.</span></p>
 
     <h3 class="strip-h">Also in the building</h3>
     <ul class="amenities">
@@ -1105,7 +1067,7 @@ html.lb-open{overflow:hidden}
   <section class="sec" aria-labelledby="say-h">
     <div class="sec-head"><div>
       <h2 id="say-h">What tenants say</h2>
-      <p class="sub">Almost everyone gives 5 stars, and the name that keeps coming up is Brett, the manager we are negotiating with.</p>
+      <p class="sub">Almost everyone gives 5 stars, and the name that keeps coming up is Brett, the general manager we have been dealing with.</p>
     </div></div>
 
     <div class="rate" data-rv>
@@ -1213,26 +1175,33 @@ html.lb-open{overflow:hidden}
     </div>
   </section>
 
-  <!-- 7. still unknown -->
+  <!-- 7. next steps -->
   <section class="sec" aria-labelledby="todo-h">
     <div class="sec-head"><div>
-      <h2 id="todo-h">Still unknown before we sign</h2>
+      <h2 id="todo-h">What happens next</h2>
+      <p class="sub">E2 is not ours until we sign and pay. Until the payment lands, ReadySpaces keeps offering it to other businesses.</p>
     </div></div>
+    <ol class="todo">
+      <li><span class="qm">1</span><div><b>Brett sends the license agreement</b> (the rental contract). Wilson sent him our company details on Nov&nbsp;3, which is what he needs to write it.</div></li>
+      <li><span class="qm">2</span><div><b>Wilson checks it, then signs online.</b> Check the term, the deposit and the December 1 start date first.</div></li>
+      <li><span class="qm">3</span><div><b>Pay the deposit and the first month's rent.</b> That payment is what secures E2.</div></li>
+      <li><span class="qm">4</span><div class="wrapword"><b>Insurance before move-in.</b> ReadySpaces needs a certificate of insurance (COI, proof that we are insured) before we move in, or it can refuse to let us in. Minimums: general liability of $1,000,000 per occurrence and $2,000,000 in total; property cover for the full replacement cost of our stock (ReadySpaces insures none of it); workers' comp as the law requires; an insurer rated A- or better by A.M. Best. Certificate holder (who receives it): 530 West Warehousing LLC. Additional insureds (other companies the policy also protects): 530 West Warehousing LLC, ReadySpaces Management LLC, ADG 530 West St LLC.</div></li>
+      <li><span class="qm">5</span><div><b>Move in: we asked for December 1, 2026.</b> Brett has not confirmed the date yet. ReadySpaces' website shows E2 open from Nov 27.</div></li>
+    </ol>
+
+    <h3 class="strip-h">Still unknown</h3>
     <ul class="todo">
-      <li><span class="qm">?</span><div><b>D6 price.</b> Not on the quote, and D6 is not listed as available on ReadySpaces' website (checked Nov 2). Brett has to tell us its price and when it opens.</div></li>
-      <li><span class="qm">?</span><div><b>Deposit.</b> The amount is not stated anywhere yet. Also ask how fast it comes back when we leave: a competitor's blog (Saltbox) quotes reviews, at sites it does not name, about slow refunds.</div></li>
-      <li><span class="qm">?</span><div><b>Term.</b> We offered 24 months. ReadySpaces' usual starting term is about 3 months, then month to month, so they still have to agree to the longer term.</div></li>
-      <li><span class="qm">?</span><div><b>Open tops.</b> In ReadySpaces' photos of rooms for rent, the walls stop well below the roof, so those rooms are open at the top. We have no photo of E2 or D6, so ask whether theirs are open too, and about dust and security for boxed stock.</div></li>
-      <li><span class="qm">!</span><div><b>No hold on a unit.</b> A unit is only secured once we sign the license agreement (the rental contract) and pay the deposit and the prorated first month (a part-month share). Until that payment lands, ReadySpaces keeps offering it to other businesses.</div></li>
-      <li><span class="qm">!</span><div class="wrapword"><b>Insurance before move-in.</b> We need a certificate of insurance (COI, proof that we are insured). Certificate holder (who receives it): 530 West Warehousing LLC. Additional insureds (other companies the policy also protects): 530 West Warehousing LLC, ReadySpaces Management LLC, ADG 530 West St LLC. ReadySpaces' website also says tenant insurance is required.</div></li>
+      <li><span class="qm">?</span><div><b>Deposit.</b> The amount is not stated anywhere yet; Wilson asked Brett on Nov&nbsp;3. Also ask how fast it comes back when we leave: a competitor's blog (Saltbox) quotes reviews, at sites it does not name, about slow refunds.</div></li>
+      <li><span class="qm">?</span><div><b>Term.</b> We asked for ReadySpaces' standard term. Third-party sites say it usually starts at about 3 months, then goes month to month. The license agreement will say.</div></li>
+      <li><span class="qm">?</span><div><b>Open tops.</b> In ReadySpaces' photos of rooms for rent, the walls stop well below the roof, so those rooms are open at the top. We have no photo of E2, so ask whether it is open too, and about dust and security for boxed stock.</div></li>
     </ul>
   </section>
 
   <!-- 8. sources -->
   <footer class="foot">
-    <p><b>Sources:</b> ReadySpaces written quote (Oct 28, 2026) &middot; floor plan Rev C6 &middot; Brett Skolnick emails (Oct 28, 2026) &middot; Wilson's tour notes &middot; readyspaces.com <a href="https://readyspaces.com/location/boston/" target="_blank" rel="noopener">Boston</a> and <a href="https://readyspaces.com/location/boston/braintree/" target="_blank" rel="noopener">Braintree</a> pages (read Nov 2, 2026) &middot; <a href="https://www.google.com/maps/place/ReadySpaces/@42.2110431,-71.0289679,17z" target="_blank" rel="noopener">Google Maps reviews</a> (read Nov 2, 2026) &middot; <a href="https://techcrunch.com/?p=2441906" target="_blank" rel="noopener">TechCrunch</a> (Nov 17, 2022) &middot; <a href="https://www.bbb.org/us/ca/los-angeles/profile/office-space-rental/readyspaces-management-llc-1216-1000036547" target="_blank" rel="noopener">BBB.org profile</a> &middot; <a href="https://warecre.com/property/boston/readyspaces-braintree-530-west-street/" target="_blank" rel="noopener">WareCRE</a> and <a href="https://www.commercialcafe.com/commercial-property/us/ma/braintree/530-west-street-1/" target="_blank" rel="noopener">CommercialCafe</a> listings &middot; <a href="https://www.saltbox.com/blog/readyspaces-alternatives" target="_blank" rel="noopener">Saltbox blog</a> (a competitor, Jan 26, 2026) &middot; <a href="https://www.fulfill.com/partners/readyspaces" target="_blank" rel="noopener">Fulfill.com</a> &middot; <a href="https://warespace.com/comparisons/warespace-vs-readyspaces" target="_blank" rel="noopener">Warespace comparison page</a> (a competitor) &middot; <a href="https://en.wikipedia.org/wiki/Braintree,_Massachusetts" target="_blank" rel="noopener">Wikipedia</a> (Braintree, Massachusetts).</p>
+    <p><b>Sources:</b> ReadySpaces written quote (Oct 28, 2026) &middot; floor plan Rev C6 &middot; Brett Skolnick emails (Oct 28 and Nov&nbsp;3, 2026) &middot; Wilson's tour notes &middot; readyspaces.com <a href="https://readyspaces.com/location/boston/" target="_blank" rel="noopener">Boston</a> and <a href="https://readyspaces.com/location/boston/braintree/" target="_blank" rel="noopener">Braintree</a> pages (read Nov 2, 2026) &middot; <a href="https://www.google.com/maps/place/ReadySpaces/@42.2110431,-71.0289679,17z" target="_blank" rel="noopener">Google Maps reviews</a> (read Nov 2, 2026) &middot; <a href="https://techcrunch.com/?p=2441906" target="_blank" rel="noopener">TechCrunch</a> (Nov 17, 2022) &middot; <a href="https://www.bbb.org/us/ca/los-angeles/profile/office-space-rental/readyspaces-management-llc-1216-1000036547" target="_blank" rel="noopener">BBB.org profile</a> &middot; <a href="https://warecre.com/property/boston/readyspaces-braintree-530-west-street/" target="_blank" rel="noopener">WareCRE</a> and <a href="https://www.commercialcafe.com/commercial-property/us/ma/braintree/530-west-street-1/" target="_blank" rel="noopener">CommercialCafe</a> listings &middot; <a href="https://www.saltbox.com/blog/readyspaces-alternatives" target="_blank" rel="noopener">Saltbox blog</a> (a competitor, Jan 26, 2026) &middot; <a href="https://www.fulfill.com/partners/readyspaces" target="_blank" rel="noopener">Fulfill.com</a> &middot; <a href="https://warespace.com/comparisons/warespace-vs-readyspaces" target="_blank" rel="noopener">Warespace comparison page</a> (a competitor) &middot; <a href="https://en.wikipedia.org/wiki/Braintree,_Massachusetts" target="_blank" rel="noopener">Wikipedia</a> (Braintree, Massachusetts).</p>
     <p>Photos: ReadySpaces.</p>
-    <p>The discount math is our own arithmetic on the quote numbers, and the D6 figures are estimates, not quotes. Private planning page: not legal or financial advice, and nothing here is a promise of what ReadySpaces will agree to.</p>
+    <p>The yearly figures and the size of the discount we asked for are our own arithmetic on the quote numbers. Private planning page: not legal or financial advice. Nothing is final until the license agreement is signed and paid.</p>
   </footer>
 
 </main>
